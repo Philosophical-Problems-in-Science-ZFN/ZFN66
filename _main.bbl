@@ -1,0 +1,1250 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{anastopoulos_comment_2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8443158563ad519491bc545b7b1c5735}{%
+           family={Anastopoulos},
+           familyi={A\bibinitperiod},
+           given={Charis},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5e8bcc9e55d25b64e7e006d7db67bd27}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Bei-Lok},
+           giveni={B\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a114210156532f84c892769ac75f49eb}
+      \strng{fullhash}{a114210156532f84c892769ac75f49eb}
+      \strng{bibnamehash}{a114210156532f84c892769ac75f49eb}
+      \strng{authorbibnamehash}{a114210156532f84c892769ac75f49eb}
+      \strng{authornamehash}{a114210156532f84c892769ac75f49eb}
+      \strng{authorfullhash}{a114210156532f84c892769ac75f49eb}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Comment on ``{A} {Spin} {Entanglement} {Witness} for {Quantum} {Gravity}'' and on ``{Gravitationally} {Induced} {Entanglement} between {Two} {Massive} {Particles} is {Sufficient} {Evidence} of {Quantum} {Effects} in {Gravity}''}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1804.11315
+      \endverb
+    \endentry
+    \entry{bassi_models_2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fdbe40c3930745bc16bfe2c17001046b}{%
+           family={Bassi},
+           familyi={B\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=caa031cd7b834dffbfba50d6d604fef5}{%
+           family={Lochan},
+           familyi={L\bibinitperiod},
+           given={Kinjalk},
+           giveni={K\bibinitperiod}}}%
+        {{hash=56954ec0edf94111c8eda1446e971592}{%
+           family={Satin},
+           familyi={S\bibinitperiod},
+           given={Seema},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9f7e1c7f74b0b7498d65eefe9470befe}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Tejinder\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=5513882bd2b91fb353dc74bc2f2770af}{%
+           family={Ulbricht},
+           familyi={U\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1ba49bf837120f70fcb1501fdaba17d}
+      \strng{fullhash}{afaf58ac665c4134971247317dbbceb6}
+      \strng{bibnamehash}{e1ba49bf837120f70fcb1501fdaba17d}
+      \strng{authorbibnamehash}{e1ba49bf837120f70fcb1501fdaba17d}
+      \strng{authornamehash}{e1ba49bf837120f70fcb1501fdaba17d}
+      \strng{authorfullhash}{afaf58ac665c4134971247317dbbceb6}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Models of wave-function collapse, underlying theories, and experimental tests}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{85}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{471\bibrangedash 527}
+      \range{pages}{57}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.85.471
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/38VSF5UA/RevModPhys.85.html:text/html;Przesłana wersja:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/UJF5FHMK/Bassi i in. - 2013 - Models of wave-function collapse, underlying theor.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.85.471
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.85.471
+      \endverb
+    \endentry
+    \entry{boge_quantum_2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b55c15bdbb4fc43ab75de538998d5cf1}{%
+           family={Boge},
+           familyi={B\bibinitperiod},
+           given={Florian\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{b55c15bdbb4fc43ab75de538998d5cf1}
+      \strng{fullhash}{b55c15bdbb4fc43ab75de538998d5cf1}
+      \strng{bibnamehash}{b55c15bdbb4fc43ab75de538998d5cf1}
+      \strng{authorbibnamehash}{b55c15bdbb4fc43ab75de538998d5cf1}
+      \strng{authornamehash}{b55c15bdbb4fc43ab75de538998d5cf1}
+      \strng{authorfullhash}{b55c15bdbb4fc43ab75de538998d5cf1}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-95764-7}
+      \field{series}{European {Studies} in {Philosophy} of {Science}}
+      \field{title}{Quantum {Mechanics} {Between} {Ontology} and {Epistemology}}
+      \field{year}{2018}
+      \verb{file}
+      \verb Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/BG49JFFS/9783319957647.html:text/html
+      \endverb
+    \endentry
+    \entry{clarke_growing_2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e673d0d1b2703a8adcf28ceac7d096ef}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=039f792c2d35f87eaf81943e185968c2}{%
+           family={Vanner},
+           familyi={V\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a9e215cd4116ac344601b919c49bfea}
+      \strng{fullhash}{1a9e215cd4116ac344601b919c49bfea}
+      \strng{bibnamehash}{1a9e215cd4116ac344601b919c49bfea}
+      \strng{authorbibnamehash}{1a9e215cd4116ac344601b919c49bfea}
+      \strng{authornamehash}{1a9e215cd4116ac344601b919c49bfea}
+      \strng{authorfullhash}{1a9e215cd4116ac344601b919c49bfea}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2058-9565}
+      \field{journaltitle}{Quantum Science and Technology}
+      \field{month}{9}
+      \field{number}{1}
+      \field{title}{Growing macroscopic superposition states via cavity quantum optomechanics}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{4}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{014003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/2058-9565/aada1d
+      \endverb
+      \verb{file}
+      \verb IOP Full Text PDF:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/SUWMV25G/Clarke i Vanner - 2018 - Growing macroscopic superposition states via cavit.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F2058-9565%2Faada1d
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F2058-9565%2Faada1d
+      \endverb
+    \endentry
+    \entry{despagnat_veiled_1995}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8867477804869e86af8ac9fe8aa4ddc3}{%
+           family={d'Espagnat},
+           familyi={d\bibinitperiod},
+           given={Bernard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{8867477804869e86af8ac9fe8aa4ddc3}
+      \strng{fullhash}{8867477804869e86af8ac9fe8aa4ddc3}
+      \strng{bibnamehash}{8867477804869e86af8ac9fe8aa4ddc3}
+      \strng{authorbibnamehash}{8867477804869e86af8ac9fe8aa4ddc3}
+      \strng{authornamehash}{8867477804869e86af8ac9fe8aa4ddc3}
+      \strng{authorfullhash}{8867477804869e86af8ac9fe8aa4ddc3}
+      \field{sortinit}{d}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Veiled {Reality}: {An} {Analysis} of {Present}-day {Quantum} {Mechanical} {Concepts}}
+      \field{year}{1995}
+    \endentry
+    \entry{de_witt_proceedings:_1957}{book}{}
+      \name{editor}{1}{}{%
+        {{hash=6dd069a903b34db590f76c71098e1de4}{%
+           family={De\bibnamedelima Witt},
+           familyi={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Cecile\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dd069a903b34db590f76c71098e1de4}
+      \strng{fullhash}{6dd069a903b34db590f76c71098e1de4}
+      \strng{bibnamehash}{6dd069a903b34db590f76c71098e1de4}
+      \strng{editorbibnamehash}{6dd069a903b34db590f76c71098e1de4}
+      \strng{editornamehash}{6dd069a903b34db590f76c71098e1de4}
+      \strng{editorfullhash}{6dd069a903b34db590f76c71098e1de4}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{number}{57-216 (unpublished)}
+      \field{series}{{WADC} {Technical} {Report}}
+      \field{title}{Proceedings: {Conference} on the {Role} of {Gravitation} in {Physics}, {Chapel} {Hill}, {North} {Carolina}, {Jan} 18-23, 1957}
+      \field{urlday}{21}
+      \field{urlmonth}{6}
+      \field{urlyear}{2019}
+      \field{year}{1957}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.edition-open-sources.org/sources/5/
+      \endverb
+      \verb{url}
+      \verb http://www.edition-open-sources.org/sources/5/
+      \endverb
+    \endentry
+    \entry{deng_quantum_2019}{article}{}
+      \name{author}{21}{}{%
+        {{hash=0f200836a902836ff8676c7599d30b7f}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yu-Hao},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=a753993c6afc6bfea114ea4114b2e619}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ad81d91ad9f28e673c628bd970306851}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Xing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=620d4065ad27f9d3c6241dcd19ae12a7}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Z.-C.},
+           giveni={Z\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=1ea9e4f8bb3bf64d2c487bb7a7961587}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=205df7736cb6a872fd63a3e325f0d226}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={M.-C.},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=75fbd46900580390a782c8295c89ea78}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f4b01651679bb8b0160e141c2e1c746d}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yu-Ming},
+           giveni={Y\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=971dfccef1fb25f4b78b415c79672039}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jin-Peng},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=aa6cb925ecb13d74e40edc7b64ab13ad}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yu-Huai},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=087123fb4f14c2540a257c28a709871c}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Li-Chao},
+           giveni={L\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=44818609e74754761b459950244e543f}{%
+           family={Matekole},
+           familyi={M\bibinitperiod},
+           given={E.\bibnamedelimi S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=319c4004a1d1800d25b8f3a4a6c32c9e}{%
+           family={Byrnes},
+           familyi={B\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e64a4e36cbb7fc560aa83818c369e554}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=efe0c4903f799c402fba10f74c17ff1f}{%
+           family={Kamp},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d7ffe153c19a9ee51ba08ca89bfbaffa}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Da-Wei},
+           giveni={D\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=5fb8918cba331939fd6603e1a77b3006}{%
+           family={Dowling},
+           familyi={D\bibinitperiod},
+           given={Jonathan\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=09a7aac86d532a36888c199969acb4ae}{%
+           family={Höfling},
+           familyi={H\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4ed95598ad8124fcc06b5a34724f18cd}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Chao-Yang},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=d34845f49829e68f2bb87dd77992b0d6}{%
+           family={Scully},
+           familyi={S\bibinitperiod},
+           given={Marlan\bibnamedelima O.},
+           giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=63e76a4430d6085c95db64c899e02284}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jian-Wei},
+           giveni={J\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c7e4276f63dbed9c4dfc5189de4fda9}
+      \strng{fullhash}{a32504b08ed06b0ce52b41f8f952f1ed}
+      \strng{bibnamehash}{9c7e4276f63dbed9c4dfc5189de4fda9}
+      \strng{authorbibnamehash}{9c7e4276f63dbed9c4dfc5189de4fda9}
+      \strng{authornamehash}{9c7e4276f63dbed9c4dfc5189de4fda9}
+      \strng{authorfullhash}{a32504b08ed06b0ce52b41f8f952f1ed}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Quantum interference between light sources separated by 150 million kilometers}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.02868
+      \endverb
+    \endentry
+    \entry{einstein_can_1935}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
+           family={Einstein},
+           familyi={E\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=19dc919856626ef90dab285f889c3b78}{%
+           family={Podolsky},
+           familyi={P\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fc8bb495c63cdab3ba6923db2097e4c7}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{fullhash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{bibnamehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{authorbibnamehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{authornamehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{authorfullhash}{d7a7dfe41768036d77a53afecb936f4e}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{10}
+      \field{title}{Can quantum-mechanical description of physical reality be considered complete?}
+      \field{volume}{47}
+      \field{year}{1935}
+      \field{pages}{777\bibrangedash 780}
+      \range{pages}{4}
+    \endentry
+    \entry{haroche_controlling_2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=95f4489b413610dbe1c5717f5996a94b}{%
+           family={Haroche},
+           familyi={H\bibinitperiod},
+           given={Serge},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{95f4489b413610dbe1c5717f5996a94b}
+      \strng{fullhash}{95f4489b413610dbe1c5717f5996a94b}
+      \strng{bibnamehash}{95f4489b413610dbe1c5717f5996a94b}
+      \strng{authorbibnamehash}{95f4489b413610dbe1c5717f5996a94b}
+      \strng{authornamehash}{95f4489b413610dbe1c5717f5996a94b}
+      \strng{authorfullhash}{95f4489b413610dbe1c5717f5996a94b}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Microwave photons trapped in a superconducting cavity constitute an ideal system to realize some of the thought experiments imagined by the founding fathers of quantum physics. The interaction of these trapped photons with Rydberg atoms crossing the cavity illustrates fundamental aspects of measurement theory. The experiments performed with this "photon box" at the Ecole Normale Supérieure (ENS) belong to the domain of quantum optics called "Cavity Quantum Electrodynamics." We have realized the non-destructive counting of photons, the recording of field quantum jumps, the preparation and reconstruction of "Schrödinger cat" states of radiation and the study of their decoherence, which provides a striking illustration of the transition from the quantum to the classical world. These experiments have also led to the demonstration of basic steps in quantum information processing, including the deterministic entanglement of atoms and the realization of quantum gates using atoms and photons as quantum bits. This lecture starts with an introduction stressing the connection between the ENS photon box and the ion trap experiments of David Wineland, whose accompanying lecture recalls his own contribution to the field of single particle control. I give then a personal account of the early days of Cavity Quantum Electrodynamics before describing the main experiments performed at ENS during the last twenty years and concluding with a discussion comparing our work to other research dealing with the control of single quantum particles.}
+      \field{issn}{0217-751X}
+      \field{journaltitle}{International Journal of Modern Physics A}
+      \field{month}{4}
+      \field{number}{10}
+      \field{title}{Controlling photons in a box and exploring the quantum to classical boundary}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{29}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{1430026}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1142/S0217751X14300269
+      \endverb
+      \verb{file}
+      \verb Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/QZ93FDLN/S0217751X14300269.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.worldscientific.com/doi/abs/10.1142/S0217751X14300269
+      \endverb
+      \verb{url}
+      \verb https://www.worldscientific.com/doi/abs/10.1142/S0217751X14300269
+      \endverb
+    \endentry
+    \entry{hylleraas_neue_1929}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f3a5b9f7ebe6af65eea66d2e5a34561a}{%
+           family={Hylleraas},
+           familyi={H\bibinitperiod},
+           given={Egil\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3a5b9f7ebe6af65eea66d2e5a34561a}
+      \strng{fullhash}{f3a5b9f7ebe6af65eea66d2e5a34561a}
+      \strng{bibnamehash}{f3a5b9f7ebe6af65eea66d2e5a34561a}
+      \strng{authorbibnamehash}{f3a5b9f7ebe6af65eea66d2e5a34561a}
+      \strng{authornamehash}{f3a5b9f7ebe6af65eea66d2e5a34561a}
+      \strng{authorfullhash}{f3a5b9f7ebe6af65eea66d2e5a34561a}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift fur Physik}
+      \field{month}{5}
+      \field{title}{Neue {Berechnung} der {Energie} des {Heliums} im {Grundzustande}, sowie des tiefsten {Terms} von {Ortho}-{Helium}}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{54}
+      \field{year}{1929}
+      \field{urldateera}{ce}
+      \field{pages}{347\bibrangedash 366}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/BF01375457
+      \endverb
+      \verb{urlraw}
+      \verb http://adsabs.harvard.edu/abs/1929ZPhy...54..347H
+      \endverb
+      \verb{url}
+      \verb http://adsabs.harvard.edu/abs/1929ZPhy...54..347H
+      \endverb
+    \endentry
+    \entry{joos_emergence_1985}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a0bfed01dfa31bf65dae6dcdfbc7e197}{%
+           family={Joos},
+           familyi={J\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6c42ca2d4438920a6defe3d0fa21520f}{%
+           family={Zeh},
+           familyi={Z\bibinitperiod},
+           given={H.\bibnamedelimi D.},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4599e44efdf4e8cb8713cc0c72c2688c}
+      \strng{fullhash}{4599e44efdf4e8cb8713cc0c72c2688c}
+      \strng{bibnamehash}{4599e44efdf4e8cb8713cc0c72c2688c}
+      \strng{authorbibnamehash}{4599e44efdf4e8cb8713cc0c72c2688c}
+      \strng{authornamehash}{4599e44efdf4e8cb8713cc0c72c2688c}
+      \strng{authorfullhash}{4599e44efdf4e8cb8713cc0c72c2688c}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0722-3277}
+      \field{journaltitle}{Zeitschrift fur Physik B Condensed Matter}
+      \field{month}{6}
+      \field{title}{The emergence of classical properties through interaction with the environment}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{59}
+      \field{year}{1985}
+      \field{urldateera}{ce}
+      \field{pages}{223\bibrangedash 243}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/BF01725541
+      \endverb
+      \verb{urlraw}
+      \verb http://adsabs.harvard.edu/abs/1985ZPhyB..59..223J
+      \endverb
+      \verb{url}
+      \verb http://adsabs.harvard.edu/abs/1985ZPhyB..59..223J
+      \endverb
+    \endentry
+    \entry{joos_decoherence_2003}{book}{}
+      \name{author}{6}{uniquelist=2}{%
+        {{hash=743bd14d5e65a661df9b9a0c66e6ad3a}{%
+           family={Joos},
+           familyi={J\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3b6299517eb7e725d0be6a5f147781fa}{%
+           family={Zeh},
+           familyi={Z\bibinitperiod},
+           given={H.\bibnamedelimi Dieter},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a35c1059e600b7b662d326854e869568}{%
+           family={Kiefer},
+           familyi={K\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+        {{hash=781565c472ab5e0e3fee146eb8920ec6}{%
+           family={Giulini},
+           familyi={G\bibinitperiod},
+           given={Domenico\bibnamedelimb J.\bibnamedelimi W.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d01def27aa49f7e12113d4f5abacb4b0}{%
+           family={Kupsch},
+           familyi={K\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=acce40d4a1c27112f32fb3cf11a0d5c6}{%
+           family={Stamatescu},
+           familyi={S\bibinitperiod},
+           given={Ion-Olimpiu},
+           giveni={I\bibinithyphendelim O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ac6ad46ec1948a80343c6e66f63d5b47}
+      \strng{fullhash}{4eb2d437daf1cb411e729c6475ff67fa}
+      \strng{bibnamehash}{ac6ad46ec1948a80343c6e66f63d5b47}
+      \strng{authorbibnamehash}{ac6ad46ec1948a80343c6e66f63d5b47}
+      \strng{authornamehash}{ac6ad46ec1948a80343c6e66f63d5b47}
+      \strng{authorfullhash}{4eb2d437daf1cb411e729c6475ff67fa}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-3-540-00390-8}
+      \field{title}{Decoherence and the {Appearance} of a {Classical} {World} in {Quantum} {Theory}}
+      \field{year}{2003}
+    \endentry
+    \entry{kiefer_claus_emergence_2012}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a35c1059e600b7b662d326854e869568}{%
+           family={Kiefer},
+           familyi={K\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a35c1059e600b7b662d326854e869568}
+      \strng{fullhash}{a35c1059e600b7b662d326854e869568}
+      \strng{bibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authorbibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authornamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authorfullhash}{a35c1059e600b7b662d326854e869568}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I describe how we can understand the classical appearance of our world from a universal quantum theory. The essential ingredient is the process of decoherence. I start with a general discussion in ordinary quantum theory and then turn to quantum gravity and quantum cosmology. There is a whole hierarchy of classicality from the global gravitational field to the fluctuations in the cosmic microwave background, which serve as the seeds for the structure in the Universe.}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{month}{9}
+      \field{number}{1975}
+      \field{title}{Emergence of a classical {Universe} from quantum gravity and cosmology}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{370}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{4566\bibrangedash 4575}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1098/rsta.2011.0492
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/5VF5J53Q/Kiefer Claus - 2012 - Emergence of a classical Universe from quantum gra.pdf:application/pdf;Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/M75YCQSD/rsta.2011.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/full/10.1098/rsta.2011.0492
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/full/10.1098/rsta.2011.0492
+      \endverb
+    \endentry
+    \entry{kiefer_quantum_2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a35c1059e600b7b662d326854e869568}{%
+           family={Kiefer},
+           familyi={K\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{a35c1059e600b7b662d326854e869568}
+      \strng{fullhash}{a35c1059e600b7b662d326854e869568}
+      \strng{bibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authorbibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authornamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authorfullhash}{a35c1059e600b7b662d326854e869568}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Third Edition}
+      \field{isbn}{978-0-19-958520-5}
+      \field{month}{4}
+      \field{series}{International {Series} of {Monographs} on {Physics}}
+      \field{title}{Quantum {Gravity}}
+      \field{year}{2012}
+      \verb{file}
+      \verb Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/LF9HKRF6/quantum-gravity-9780199585205.html:text/html
+      \endverb
+    \endentry
+    \entry{kiefer_albert_2015}{book}{}
+      \name{editor}{1}{}{%
+        {{hash=a35c1059e600b7b662d326854e869568}{%
+           family={Kiefer},
+           familyi={K\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{a35c1059e600b7b662d326854e869568}
+      \strng{fullhash}{a35c1059e600b7b662d326854e869568}
+      \strng{bibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{editorbibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{editornamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{editorfullhash}{a35c1059e600b7b662d326854e869568}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-642-41998-0}
+      \field{series}{Klassische {Texte} der {Wissenschaft}}
+      \field{shorttitle}{Albert {Einstein}, {Boris} {Podolsky}, {Nathan} {Rosen}}
+      \field{title}{Albert {Einstein}, {Boris} {Podolsky}, {Nathan} {Rosen}: {Kann} die quantenmechanische {Beschreibung} der physikalischen {Realität} als vollständig betrachtet werden?}
+      \field{year}{2015}
+    \endentry
+    \entry{kiefer_does_2015}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a35c1059e600b7b662d326854e869568}{%
+           family={Kiefer},
+           familyi={K\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a35c1059e600b7b662d326854e869568}
+      \strng{fullhash}{a35c1059e600b7b662d326854e869568}
+      \strng{bibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authorbibnamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authornamehash}{a35c1059e600b7b662d326854e869568}
+      \strng{authorfullhash}{a35c1059e600b7b662d326854e869568}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2451-0602}
+      \field{journaltitle}{Philosophical Problems in Science (Zagadnienia Filozoficzne w Nauce)}
+      \field{month}{12}
+      \field{number}{59}
+      \field{title}{Does time exist in quantum gravity?}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{7\bibrangedash 24}
+      \range{pages}{18}
+      \verb{file}
+      \verb Full Text PDF:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/6RFXAGS8/Kiefer - 2015 - Does time exist in quantum gravity.pdf:application/pdf;Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/X9SAFEIP/180.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://zfn.edu.pl/index.php/zfn/article/view/180
+      \endverb
+      \verb{url}
+      \verb http://zfn.edu.pl/index.php/zfn/article/view/180
+      \endverb
+      \keyw{arrow of time,cosmology,entropy,quantum gravity}
+    \endentry
+    \entry{marletto_witness_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=be234457d55234fc60ac10d09dbf60b5}{%
+           family={Marletto},
+           familyi={M\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dc5f56e55a3999eda6373f9ef697da07}{%
+           family={Vedral},
+           familyi={V\bibinitperiod},
+           given={Vlatko},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b2bc9c6f0faba86d5e6f8117e721d45}
+      \strng{fullhash}{3b2bc9c6f0faba86d5e6f8117e721d45}
+      \strng{bibnamehash}{3b2bc9c6f0faba86d5e6f8117e721d45}
+      \strng{authorbibnamehash}{3b2bc9c6f0faba86d5e6f8117e721d45}
+      \strng{authornamehash}{3b2bc9c6f0faba86d5e6f8117e721d45}
+      \strng{authorfullhash}{3b2bc9c6f0faba86d5e6f8117e721d45}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Physicists should rethink interference experiments to reveal whether or not general relativity follows classical theory, argue Chiara Marletto and Vlatko Vedral.}
+      \field{journaltitle}{Nature News}
+      \field{month}{7}
+      \field{number}{7662}
+      \field{title}{Witness gravity’s quantum side in the lab}
+      \field{urlday}{17}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{547}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{156\bibrangedash 158}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/547156a
+      \endverb
+      \verb{file}
+      \verb Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/YYMKP67P/witness-gravity-s-quantum-side-in-the-lab-1.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/news/witness-gravity-s-quantum-side-in-the-lab-1.22273
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/news/witness-gravity-s-quantum-side-in-the-lab-1.22273
+      \endverb
+    \endentry
+    \entry{von_neumann_mathematische_1932}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5df83b1766fc20a18dc734f278672b6c}{%
+           prefix={von},
+           prefixi={v\bibinitperiod},
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5df83b1766fc20a18dc734f278672b6c}
+      \strng{fullhash}{5df83b1766fc20a18dc734f278672b6c}
+      \strng{bibnamehash}{5df83b1766fc20a18dc734f278672b6c}
+      \strng{authorbibnamehash}{5df83b1766fc20a18dc734f278672b6c}
+      \strng{authornamehash}{5df83b1766fc20a18dc734f278672b6c}
+      \strng{authorfullhash}{5df83b1766fc20a18dc734f278672b6c}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{OCLC: 3101079}
+      \field{title}{Mathematische {Grundlagen} {Der} {Quantenmechanik}}
+      \field{year}{1932}
+    \endentry
+    \entry{schlosshauer_decoherence:_2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2d63ac037ea9271d41f444b5f6ff8ad4}{%
+           family={Schlosshauer},
+           familyi={S\bibinitperiod},
+           given={Maximilian\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2d63ac037ea9271d41f444b5f6ff8ad4}
+      \strng{fullhash}{2d63ac037ea9271d41f444b5f6ff8ad4}
+      \strng{bibnamehash}{2d63ac037ea9271d41f444b5f6ff8ad4}
+      \strng{authorbibnamehash}{2d63ac037ea9271d41f444b5f6ff8ad4}
+      \strng{authornamehash}{2d63ac037ea9271d41f444b5f6ff8ad4}
+      \strng{authorfullhash}{2d63ac037ea9271d41f444b5f6ff8ad4}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-540-35773-5}
+      \field{note}{OCLC: ocn124026662}
+      \field{series}{The {Frontiers} {Collection}}
+      \field{shorttitle}{Decoherence}
+      \field{title}{Decoherence: and the {Quantum}-{To}-{Classical} {Transition}}
+      \field{year}{2007}
+      \verb{file}
+      \verb Full Text:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/H2VILL22/Schlosshauer - 2007 - Decoherence and the quantum-to-classical transiti.pdf:application/pdf;Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/AWMNTA5C/books.html:text/html;Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/4YYCFGDN/9783540357735.html:text/html
+      \endverb
+      \keyw{Coherence (Nuclear physics),Quantum theory}
+    \endentry
+    \entry{schmole_micromechanical_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=81da68ac626d68e1d124c189a957d4c0}{%
+           family={Schmöle},
+           familyi={S\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f4105bc76e0a2031609e3169370fe1f1}{%
+           family={Dragosits},
+           familyi={D\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=11f30d861c58aac44c3a7a1314050df5}{%
+           family={Hepach},
+           familyi={H\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=32acda7ce77db07ff195294f84f2167b}{%
+           family={Aspelmeyer},
+           familyi={A\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{67b2ab249d5919709198ba5892e736fe}
+      \strng{fullhash}{7b9dc21fa546844cb9d67bf3704cca08}
+      \strng{bibnamehash}{7b9dc21fa546844cb9d67bf3704cca08}
+      \strng{authorbibnamehash}{7b9dc21fa546844cb9d67bf3704cca08}
+      \strng{authornamehash}{67b2ab249d5919709198ba5892e736fe}
+      \strng{authorfullhash}{7b9dc21fa546844cb9d67bf3704cca08}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0264-9381, 1361-6382}
+      \field{journaltitle}{Classical and Quantum Gravity}
+      \field{month}{6}
+      \field{number}{12}
+      \field{title}{A micromechanical proof-of-principle experiment for measuring the gravitational force of milligram masses}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{33}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{125031}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/33/12/125031
+      \endverb
+      \verb{file}
+      \verb Pełny tekst:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/2CSWQ752/Schmöle i in. - 2016 - A micromechanical proof-of-principle experiment fo.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://stacks.iop.org/0264-9381/33/i=12/a=125031?key=crossref.ffa19d9a914820ec711e84ce04527e89
+      \endverb
+      \verb{url}
+      \verb http://stacks.iop.org/0264-9381/33/i=12/a=125031?key=crossref.ffa19d9a914820ec711e84ce04527e89
+      \endverb
+    \endentry
+    \entry{schrodinger_discussion_1935}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d8dd71fe9dafefe942ea59295dee0ec4}{%
+           family={Schrödinger},
+           familyi={S\bibinitperiod},
+           given={Erwin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d8dd71fe9dafefe942ea59295dee0ec4}
+      \strng{fullhash}{d8dd71fe9dafefe942ea59295dee0ec4}
+      \strng{bibnamehash}{d8dd71fe9dafefe942ea59295dee0ec4}
+      \strng{authorbibnamehash}{d8dd71fe9dafefe942ea59295dee0ec4}
+      \strng{authornamehash}{d8dd71fe9dafefe942ea59295dee0ec4}
+      \strng{authorfullhash}{d8dd71fe9dafefe942ea59295dee0ec4}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The probability relations which can occur between two separated physical systems are discussed, on the assumption that their state is known by a representative in common. The two families of observables, relating to the first and to the second system respectively, are linked by at least one match between two definite members, one of either family. The word match is short for stating that the values of the two observables in question determine each other uniquely and therefore (since the actual labelling is irrelevant) can be taken to be equal. In general there is but one match, but there can be more. If, in addition to the first match, there is a second one between canonical conjugates of the first mates, then there are infinitely many matches, every function of the first canonical pair matching with the same function of the second canonical pair. Thus there is a complete one-to-one correspondence between those two branches (of the two families of observables) which relate to the two degrees of freedom in question. If there are no others, the one-to-one correspondence persists as time advances, but the observables of the first system (say) change their mates in the way that the latter, i.e. the observables of the second system, undergo a certain continuous contact-transformation.}
+      \field{issn}{1469-8064, 0305-0041}
+      \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Discussion of probability relations between separated systems}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{31}
+      \field{year}{1935}
+      \field{urldateera}{ce}
+      \field{pages}{555\bibrangedash 563}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1017/S0305004100013554
+      \endverb
+      \verb{file}
+      \verb Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/Q5KELWN6/C1C71E1AA5BA56EBE6588AAACB9A222D.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/discussion-of-probability-relations-between-separated-systems/C1C71E1AA5BA56EBE6588AAACB9A222D
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/discussion-of-probability-relations-between-separated-systems/C1C71E1AA5BA56EBE6588AAACB9A222D
+      \endverb
+    \endentry
+    \entry{zeh_interpretation_1970}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3b6299517eb7e725d0be6a5f147781fa}{%
+           family={Zeh},
+           familyi={Z\bibinitperiod},
+           given={H.\bibnamedelimi Dieter},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{fullhash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{bibnamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authorbibnamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authornamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authorfullhash}{3b6299517eb7e725d0be6a5f147781fa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is demonstrated that neither the arguments leading to inconsistencies in the description of quantum-mechanical measurement nor those “explaining” the process of measurement by means of thermodynamical statistics are valid. Instead, it is argued that the probability interpretation is compatible with an objective interpretation of the wave function.}
+      \field{issn}{1572-9516}
+      \field{journaltitle}{Foundations of Physics}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{On the interpretation of measurement in quantum theory}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{1}
+      \field{year}{1970}
+      \field{urldateera}{ce}
+      \field{pages}{69\bibrangedash 76}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/BF00708656
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF00708656
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF00708656
+      \endverb
+      \keyw{Objective Interpretation,Probability Interpretation,Quantum Theory,Thermodynamical Statistic,Wave Function}
+    \endentry
+    \entry{zeh_physical_2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3b6299517eb7e725d0be6a5f147781fa}{%
+           family={Zeh},
+           familyi={Z\bibinitperiod},
+           given={H.\bibnamedelimi Dieter},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{fullhash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{bibnamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authorbibnamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authornamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authorfullhash}{3b6299517eb7e725d0be6a5f147781fa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{isbn}{978-3-540-68000-0}
+      \field{series}{The {Frontiers} {Collection}}
+      \field{title}{The {Physical} {Basis} of {The} {Direction} of {Time}}
+      \field{year}{2007}
+      \verb{file}
+      \verb Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/CQWPSN4X/9783540680000.html:text/html
+      \endverb
+    \endentry
+    \entry{zeh_strange_2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3b6299517eb7e725d0be6a5f147781fa}{%
+           family={Zeh},
+           familyi={Z\bibinitperiod},
+           given={H.\bibnamedelimi Dieter},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{fullhash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{bibnamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authorbibnamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authornamehash}{3b6299517eb7e725d0be6a5f147781fa}
+      \strng{authorfullhash}{3b6299517eb7e725d0be6a5f147781fa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This is an attempt of a non-technical but conceptually consistent presentation of quantum theory in a historical context. While the first part is written for a general readership, Section 5 may appear a bit provocative to some quantum physicists. I argue that the single-particle wave functions of quantum mechanics have to be correctly interpreted as field modes that are “occupied once” (i.e. first excited states of the corresponding quantum oscillators in the case of boson fields). Multiple excitations lead to apparent many-particle wave functions, while the quantum states proper are defined by wave function(al)s on the “configuration” space of fundamental fields, or on another, as yet elusive, fundamental local basis.}
+      \field{issn}{1865-7109}
+      \field{journaltitle}{Zeitschrift für Naturforschung A}
+      \field{number}{3}
+      \field{title}{The strange (hi)story of particles and waves}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{71}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{195\bibrangedash 212}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1515/zna-2015-0509
+      \endverb
+      \verb{file}
+      \verb Przesłana wersja:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/EF8L5AK7/Zeh - 2016 - The Strange (Hi)story of Particles and Waves.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.degruyter.com/view/j/zna.2016.71.issue-3/zna-2015-0509/zna-2015-0509.xml
+      \endverb
+      \verb{url}
+      \verb https://www.degruyter.com/view/j/zna.2016.71.issue-3/zna-2015-0509/zna-2015-0509.xml
+      \endverb
+      \keyw{Decoherence,Entanglement,Measurement,Quantum Cosmology,Quantum Theory}
+    \endentry
+    \entry{zurek_decoherence_2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=04a630b512de7d0253c783675391806a}{%
+           family={Zurek},
+           familyi={Z\bibinitperiod},
+           given={Wojciech\bibnamedelima Hubert},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{04a630b512de7d0253c783675391806a}
+      \strng{fullhash}{04a630b512de7d0253c783675391806a}
+      \strng{bibnamehash}{04a630b512de7d0253c783675391806a}
+      \strng{authorbibnamehash}{04a630b512de7d0253c783675391806a}
+      \strng{authornamehash}{04a630b512de7d0253c783675391806a}
+      \strng{authorfullhash}{04a630b512de7d0253c783675391806a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The manner in which states of some quantum systems become effectively classical is of great significance for the foundations of quantum physics, as well as for problems of practical interest such as quantum engineering. In the past two decades it has become increasingly clear that many (perhaps all) of the symptoms of classicality can be induced in quantum systems by their environments. Thus decoherence is caused by the interaction in which the environment in effect monitors certain observables of the system, destroying coherence between the pointer states corresponding to their eigenvalues. This leads to environment-induced superselection or einselection, a quantum process associated with selective loss of information. Einselected pointer states are stable. They can retain correlations with the rest of the universe in spite of the environment. Einselection enforces classicality by imposing an effective ban on the vast majority of the Hilbert space, eliminating especially the flagrantly nonlocal “Schrödinger-cat states.” The classical structure of phase space emerges from the quantum Hilbert space in the appropriate macroscopic limit. Combination of einselection with dynamics leads to the idealizations of a point and of a classical trajectory. In measurements, einselection replaces quantum entanglement between the apparatus and the measured system with the classical correlation. Only the preferred pointer observable of the apparatus can store information that has predictive power. When the measured quantum system is microscopic and isolated, this restriction on the predictive utility of its correlations with the macroscopic apparatus results in the effective “collapse of the wave packet.” The existential interpretation implied by einselection regards observers as open quantum systems, distinguished only by their ability to acquire, store, and process information. Spreading of the correlations with the effectively classical pointer states throughout the environment allows one to understand “classical reality” as a property based on the relatively objective existence of the einselected states. Effectively classical pointer states can be “found out” without being re-prepared, e.g, by intercepting the information already present in the environment. The redundancy of the records of pointer states in the environment (which can be thought of as their “fitness” in the Darwinian sense) is a measure of their classicality. A new symmetry appears in this setting. Environment-assisted invariance or envariance sheds new light on the nature of ignorance of the state of the system due to quantum correlations with the environment and leads to Born’s rules and to reduced density matrices, ultimately justifying basic principles of the program of decoherence and einselection.}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Decoherence, einselection, and the quantum origins of the classical}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{75}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \field{pages}{715\bibrangedash 775}
+      \range{pages}{61}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.75.715
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/QDMIG7BQ/RevModPhys.75.html:text/html;Przesłana wersja:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/R5WJMJPB/Zurek - 2003 - Decoherence, einselection, and the quantum origins.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.75.715
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.75.715
+      \endverb
+    \endentry
+    \entry{zurek_wojciech_hubert_quantum_2018}{article}{}
+      \name{author}{1}{}{%
+        {{hash=04a630b512de7d0253c783675391806a}{%
+           family={Zurek},
+           familyi={Z\bibinitperiod},
+           given={Wojciech\bibnamedelima Hubert},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{04a630b512de7d0253c783675391806a}
+      \strng{fullhash}{04a630b512de7d0253c783675391806a}
+      \strng{bibnamehash}{04a630b512de7d0253c783675391806a}
+      \strng{authorbibnamehash}{04a630b512de7d0253c783675391806a}
+      \strng{authornamehash}{04a630b512de7d0253c783675391806a}
+      \strng{authorfullhash}{04a630b512de7d0253c783675391806a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The emergence of the classical world from the quantum substrate of our Universe is a long-standing conundrum. In this paper, I describe three insights into the transition from quantum to classical that are based on the recognition of the role of the environment. I begin with the derivation of preferred sets of states that help to define what exists—our everyday classical reality. They emerge as a result of the breaking of the unitary symmetry of the Hilbert space which happens when the unitarity of quantum evolutions encounters nonlinearities inherent in the process of amplification—of replicating information. This derivation is accomplished without the usual tools of decoherence, and accounts for the appearance of quantum jumps and the emergence of preferred pointer states consistent with those obtained via environment-induced superselection, or einselection. The pointer states obtained in this way determine what can happen—define events—without appealing to Born’s Rule for probabilities. Therefore, pk={|}ψk{|}2 can now be deduced from the entanglement-assisted invariance, or envariance—a symmetry of entangled quantum states. With probabilities at hand, one also gains new insights into the foundations of quantum statistical physics. Moreover, one can now analyse the information flows responsible for decoherence. These information flows explain how the perception of objective classical reality arises from the quantum substrate: the effective amplification that they represent accounts for the objective existence of the einselected states of macroscopic quantum systems through the redundancy of pointer state records in their environment—through quantum Darwinism.This article is part of a discussion meeting issue ‘Foundations of quantum mechanics and their impact on contemporary society’.}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{month}{7}
+      \field{number}{2123}
+      \field{shorttitle}{Quantum theory of the classical}
+      \field{title}{Quantum theory of the classical: quantum jumps, {Born}’s {Rule} and objective classical reality via quantum {Darwinism}}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{376}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{20180107}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsta.2018.0107
+      \endverb
+      \verb{file}
+      \verb Przesłana wersja:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/WDBGGVH9/Zurek Wojciech Hubert - 2018 - Quantum theory of the classical quantum jumps, Bo.pdf:application/pdf;Snapshot:/home/pawel/.zotero/zotero/2felkxqq.default/zotero/storage/NNE7SG89/rsta.2018.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2018.0107
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2018.0107
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

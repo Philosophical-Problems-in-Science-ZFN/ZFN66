@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {polish}{}
+\defcounter {refsection}{0}\relax 
+\noindent {\fontfamily {MyriadPro-OsF}\fontseries {m}\fontshape {n}\fontsize {10}{12}\selectfont {Claus Kiefer}}\\
+\defcounter {refsection}{0}\relax 
+{\fontfamily {MyriadPro-OsF}\fontseries {m}\fontshape {it}\fontsize {10}{12}\selectfont Does the quantum mechanical wave function exist?}\unhbox \voidb@x \cleaders \hbox to.44em{\hss .\hss }\hfill \kern \z@ {\fontfamily {MyriadPro-OsF}\fontseries {l}\fontshape {n}\fontsize {12}{14}\selectfont 5}
+\defcounter {refsection}{0}\relax 
+\vskip .8\baselineskip 
+\babel@toc {english}{}
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {1}Quantum theory}{5}{section.0.1}
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {2}Decoherence}{10}{section.0.2}
+\defcounter {refsection}{1}\relax 
+\contentsline {section}{\numberline {3}Quantum gravity}{14}{section.0.3}
+\defcounter {refsection}{1}\relax 
+\contentsline {paragraph}{Acknowledgements}{19}{equation.0.3.8}
+\babel@toc {polish}{}
