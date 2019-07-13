@@ -106,6 +106,8 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 \setlist{noitemsep} % lub \setlist{nosep}
 
 
+%%lamza
+
 \setlistdepth{8}
 \newlist{longitemize}{itemize}{8}
 \setlist[longitemize,1]{label=$\bullet$}
@@ -118,6 +120,19 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 \setlist[longitemize,8]{label=$\bullet$}
 
 \usepackage{scrextend}
+
+%%%liana
+\newtheoremstyle{sltheorem}
+{1em}                % Space above
+{1em}                % Space below
+{\small\mdseries}        % Theorem body font % (default is "\upshape")
+{}                % Indent amount
+{\itshape}       % Theorem head font % (default is \mdseries)
+{.}               % Punctuation after theorem head % default: no punctuation
+{ }               % Space after theorem head
+{}                % Theorem head spec
+\theoremstyle{sltheorem}
+\newtheorem{uwaga}{Uwaga}
 
 
 
