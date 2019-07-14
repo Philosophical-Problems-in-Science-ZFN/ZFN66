@@ -398,6 +398,37 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 	\end{refsection}%
 }
 
+\newenvironment{editorial}[5]%
+{	\setcounter{footnote}{0}%
+	\setcounter{equation}{0}%
+	\setcounter{section}{0}%
+	\setcounter{subsection}{0}%
+	\setcounter{equation}{0}%
+	\setcounter{table}{0}%
+	\cleardoublepage%
+	\widowpenalties 3 10000 10000 0%
+	\thispagestyle{plain}\addtocounter{tocnr}{1}\newcommand\tocnr{x\arabic{tocnr}}% empty plain
+	\addtocontents{toc}{\noindent{\tocname{#1}}\\}%
+	\addtocontents{toc}{{\toctititem#4}\dotfill{\subsubsectit\thepage}}%
+	\addtocontents{toc}{\vskip.8\baselineskip}
+		\pasekpl%
+		\begin{raggedleft}%
+			{\flushright\chaptitle\color{black!70}{#2\par}}%
+%			\vspace{3mm}%
+			\selectlanguage{english} %
+			{\flushright\chaptitleeng\color{black!50}{#5}}\par%
+			\vspace{5mm}%
+			{\flushright\subbold{#1}\label{\tocnr}\par}%
+			\vspace{5mm}%
+		\end{raggedleft}%
+		\vspace{5mm}%
+		\selectlanguage{polish}%
+		\markboth{\pagname\protect{#1}}{\pagtit\protect{#3}}%
+	}%
+	{%
+	\label{e\tocnr}%
+	}
+
 
 
 \newenvironment{recplenv}[4]%
@@ -846,15 +877,16 @@ backend=biber]{biblatex}
 %--------------------------------------
 
 
-%\input{00a_malina.tex}
-
-%\input{00b_introduction.tex}
 
 
 
 
 %\input{default.tex}
 
+
+%\sekcja{Od Redakcji}{Editorial}
+
+\input{EDI_Heller/40latZFN.tex}
 
 
 %\sekcja{Artykuły}{Articles}
@@ -880,9 +912,9 @@ backend=biber]{biblatex}
 
 %\sekcja{Klasycy: teksty-komentarze}{Classics: texts and commentaries}
 %\sekcja{Z lektury klasyków}{Learning from the classics}
-\input{CLA_Heller/Heller.tex}
-\input{CLA_Polak/Polak.tex}
-\input{CLA_Trombik/Trombik.tex}
+%\input{CLA_Heller/Heller.tex}
+%\input{CLA_Polak/Polak.tex}
+%\input{CLA_Trombik/Trombik.tex}
 
 
 %\sekcja{Recenzje}{Book reviews}
