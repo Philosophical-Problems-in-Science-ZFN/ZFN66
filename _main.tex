@@ -28,6 +28,7 @@
 \usepackage{amssymb}	% dodatek math
 \usepackage{amstext}	% \text
 \usepackage{amsthm}
+\usepackage{amsmath}
 %\usepackage{xfrac}
 \usepackage[normalem]{ulem}
 
@@ -683,10 +684,12 @@ backend=biber]{biblatex}
 
 %\addbibresource{PAU_Lamza/Lamza.bib}
 
-\addbibresource{CLA_Heller/Heller.bib}
-\addbibresource{CLA_Polak/Polak-ext.bib}
-\addbibresource{CLA_Trombik/Trombik.bib}
-%\addbibresource{PAU_Kus/kus.bib}
+%\addbibresource{CLA_Heller/Heller.bib}
+%\addbibresource{CLA_Polak/Polak-ext.bib}
+%\addbibresource{CLA_Trombik/Trombik.bib}
+
+
+\addbibresource{SPE_Fredenhagen/Fredenhagen.bib}
 %\addbibresource{REC_Drobniak/drobniak.bib}
 %\addbibresource{_REC_Heller/heller-maczka.bib}
 
@@ -832,15 +835,29 @@ backend=biber]{biblatex}
 %---------------Kiefer-----------------------
 
 \newcommand{\be}{\begin{equation}}
-	\newcommand{\ee}{\end{equation}}
+\newcommand{\ee}{\end{equation}}
 \newcommand{\bea}{\begin{eqnarray}}
-	\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
 \newcommand{\lb}{\label}
 \newcommand{\bdm}{\begin{displaymath}}
-	\newcommand{\edm}{\end{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
 \newcommand{\D}{{\rm d}}
 \newcommand{\E}{{\rm e}}
 \newcommand{\I}{{\rm i}}
+
+
+
+%---------------Fredenhagen-----------------------
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{definition}{Definition}[section]
+
+
+\newcommand{\RR}{\mathbb{R}}           % real  numbers
+\newcommand{\CC}{\mathbb{C}}
 
 %--------------------------------------------
 
@@ -886,7 +903,14 @@ backend=biber]{biblatex}
 
 %\sekcja{Od Redakcji}{Editorial}
 
-\input{EDI_Heller/40latZFN.tex}
+%\input{EDI_Heller/40latZFN.tex}
+
+
+
+%\sekcja{Emergence of the Classical}{}
+
+\input{SPE_Fredenhagen/Fredenhagen.tex}
+
 
 
 %\sekcja{Artykuły}{Articles}

@@ -1,0 +1,219 @@
+\begin{artengenv}{Klaus Fredenhagen}
+	{Independent quantum systems and the associativity of the product of quantum observables}
+	{Independent quantum systems and the associativity\ldots}
+	{Independent quantum systems and the associativity of the product of quantum observables}
+	{II. Institut f\"ur Theoretische Physik Universit\"at Hamburg}
+	{We start from the assumption that the real valued observables of a quantum system form a Jordan algebra which is equipped with a compatible Lie product characterizing infinitesimal symmetries,
+		and ask whether two such systems can be considered as independent subsystems of a larger system. We show that this  is possible if and only if the associator of the Jordan product is a fixed multiple of the associator of the Lie product. In this case it is known that the two products can be combined to an associative product in the Jordan algebra or its complexification, depending on the sign of the multiple.}
+	{quantum systems, quantum observables.}
+	
+	
+
+\section{Introduction}
+\lettrine[loversize=0.13,lines=2,lraise=-0.05,nindent=0em,findent=0.2pt]%
+{I}{}n quantum theory, the (real valued) observables are self-adjoint elements of a complex associative involutive algebra. This structure is quite different from the classical case where the observables form a Poisson algebra, i.e. an algebra over the reals with a commutative and associative product  and a Lie product inducing derivations for the commutative product. 
+
+As emphasized by Niklas Landsman in his book \parencite*{Landsman}, the structure in the quantum case can be formulated in an analogous way by equipping the selfadjoint part of the algebra with the Jordan product (i.e. $\frac12$ times the anticommutator) and a Lie product defined as $\frac{i}{\hbar}$ times the commutator.
+Both products have a physical motivation quite similar to the classical case. In particular the induced derivations of the Jordan product by the Lie product are motivated by their interpretation as infinitesimal symmetries, and the Jacobi identity for the Lie product may be understood as a consistency condition on symmetries. Both products are non-associative, and the associator of the Jordan product is $\hbar^2/4$ times the associator of the Lie product. 
+
+The question we want to analyze in this paper is whether the latter relation between the associators can be physically motivated. Mathematically it implies that both products can be combined to an associative product in a complexification of the algebra.
+This algebra has an antilinear involution, and its self-adjoint part is the original Jordan algebra with the Lie product given in terms of the commutator.    
+
+To answer this question we add the requirement that independent physical systems can be considered as parts of a larger system, such that the properties of the subsystems are not influenced by the embedding into the larger system. 
+We show that the validity of the Jacobi identity in the composed system implies that the associators of the Jordan products are proportional to the associators of the Lie product, with a proportionality constant which is independent  of the system. If the constant is positive, one obtains an associative product in the complexified algebras, and the composed system arises as the self-adjoint part of the tensor product of the associative algebras. 
+
+The idea to derive the associative product of quantum physics from the composibility of systems was first discussed in the paper of Grgin and Petersen \parencite*{P} and reconsidered more recently by Kapustin \parencite*{K} and Moldoveanu \parencite*{M}. 
+ A related but independent result applying to the infinite dimensional case can be found in \parencite{H}, see also the book  \parencite{HS}. Contrary to these works we do not make any \textit{a priori} assumptions on the way the larger system can be built from the subsystems.
+ 
+ 
+ 
+ 
+ 
+ 
+%%%%%%%%%%%%%%%%%
+\section{Jordan-Lie algebras}
+\lettrine[loversize=0.13,lines=2,lraise=-0.05,nindent=0em,findent=0.2pt]%
+{A}{} Jordan algebra is a real vector space $A$ equipped with a commutative product 
+\renewcommand{\c}{\circ}
+$\c$, i.e. a bilinear map
+\[A\times A\to A, (a,b)\mapsto a\c b\]
+with $a\c b=b\c a$.
+This product is not necessarily associative, instead only the weaker relation 
+\be
+\label{Jordan}
+(a^2\c b)\c a=a^2\c(b\c a)
+\ee
+holds, where $a^2=a\c a$. Jordan introduced this concept in order to describe the structure one can expect for quantum observables. Indeed, the linear structure may be motivated by Ehrenfest's Theorem stating that expectation values add as in classical physics \parencite[see e.g.][]{Arodz}; labeling of measurement results in terms of real numbers may be redefined by applying a mapping $\RR\to\RR$, so in particular squares of observables can be defined, and a commutative product can be introduced by
+\[a\c b\doteq\frac12((a+b)^2-a^2-b^2)\ .\] 
+The condition \eqref{Jordan} follows from the requirement that powers are well defined,
+\[a^n\circ a^m=a^{n+m}\]
+where $a^1=a$, $a^{n+1}=a^n\c a$, under the additional positivity condition
+\be\label{positiv}
+\sum a_i^2=0\ \Rightarrow a_i=0\ .
+\ee
+(See \parencite{JNW}; such a Jordan algebra is called formally real.)
+Finite dimensional Jordan algebras can be classified. Besides the standard case of selfadjoint subalgebras of associative involutive algebras over $\RR,\CC$ or 
+$\mathbb{H}$ (the quaternions) one has a few exceptional cases. We only consider unital Jordan algebras, i.e. there is an element $1\in A$ which satisfies the relation
+\be\label{unit}1\c a=a\forall a\in A\ .\ee 
+For finite dimensional Jordan algebras the existence of the unit is a consequence of the positivity condition \eqref{positiv}.
+
+In addition to the Jordan product of observables one has in quantum theory a Lie product in terms of commutators which describes the dual role of observables as generators of infinitesimal symmetries. The standard example is Heisenberg's equation of motion
+characterizing the time evolution, and it corresponds directly to the Poisson bracket of classical physics, as first observed by Dirac. The arising structure has been analyzed by Landsman \parencite*{Landsman}. He defines a Jordan-Lie algebra as a Jordan algebra $(A,\c)$ with a Lie product, i.e. a bilinear map   
+\[
+A\times A\to A\ ,\ (a,b)\mapsto [a,b]
+\]
+which is antisymmetric
+\[ [a,b]=-[b,a]\]
+and satisfies the Jacobi identity
+\be\label{Jacobi}[[a,b],c]+[[b,c],a]+[[c,a],b]=0\ .\ee
+The Lie product is related to the Jordan product by two relations. The first is the Leibniz rule
+\be\label{Leibniz}[a\c b,c]=a\c[b,c]+[a,c]\c c\ .\ee
+This rule is motivated by the interpretation of the map $A\ni a\mapsto[a,c]$ as an infinitesimal symmetry.
+The second relation involves the associators. 
+Denote the associator of the Jordan product by
+\[[a,b,c]\doteq(a\c b)\c c-a\c(b\c c)\]
+and the associator of the Lie product by
+\[[[a,b,c]]\doteq[[a,b],c]-[a,[b,c]]\equiv[[a,c],b]\ .\]
+Then the relation is
+\be\label{ass}[a,b,c]=\frac{\hbar^2}{4}[[a,b,c]]\ .\ee
+\newcommand{\ot}{\otimes}
+One then can introduce a product $\cdot$ on the complexification $A\ot\CC$ of $A$, by
+\be\label{complex} (a\ot z)\cdot( b\ot w)=(a\c b)\ot zw+[a,b]\ot\frac{i\hbar zw}{2},\ee
+which turns out to be associative due to \eqref{ass}. One thus obtains the standard structure of the algebra of quantum observables.
+It remains open whether the relation \eqref{ass} between the two associators has a physical interpretation.
+
+We therefore introduce the concept of a q-algebra where the condition \eqref{ass} is not imposed. We also do not require the Jordan condition \eqref{Jordan} and the positivity relation \eqref{positiv}
+\begin{definition}
+A q-algebra is a real vector space equipped with a commutative product $\c$ and an antisymmetric product $[,]$. It contains a unit for the commutative product \eqref{unit} and satisfies the Jacobi identity \eqref{Jacobi} and the Leibniz rule \eqref{Leibniz}.
+\end{definition}
+
+
+%%%%%%%%%%%%
+\section{Independent subsystems}
+Let $A,B$ and $C$ be q-algebras.
+To model the requirement that $A$ and $B$ represent independent subsystems of the larger system represented by $C$ we require the following relations:
+\begin{definition}\label{independent}
+Let $\alpha:A\to C$ and $\beta:B\to C$ be monomorphisms of q-algebras. The pair $(\alpha,\beta)$ is called an embedding of independent subsystems if the following conditions are satisfied: 
+\begin{enumerate}\label{composition}
+\item the map
+\[A\times B\ni(a,b)\to \alpha(a)\c\beta(b)\in C \]
+extends to an injective linear map  $\alpha\ot\beta:A\ot B\to C$.
+\item the infinitesimal symmetries implemented by elements of $A$ act trivially on $B$ and vice versa,
+ \be\label{loc1}[\alpha(a),\beta(b)]=0 \ \forall a\in A,b\in B, \ \ee
+\item the $\c$-product with an observable of one of the subsystems does not affect the $\c$-product in the other subsystem (the observables from $A$ are compatible with the observables from $B$ in the context of Jordan algebras \parencite{HS})
+\be\label{loc2}(\alpha(a)\c(\alpha(a')\c\beta(b))=\alpha(a\c a')\c\beta(b)\ , (\alpha(a)\c\beta(b))\c\beta(b')=\alpha(a)\c\beta(b\c b')\ ,\ee
+%\item $C$ is generated by $\alpha(A)$ and $\beta(B)$.
+\end{enumerate}
+\end{definition}
+In the following we omit the symbols $\alpha$ and $\beta$ by identifying $A$ and $B$ with their embeddings in $C$. Moreover, we delete the symbol $\c$ for the commutative product and replace it by juxtaposition. 
+We first determine the antisymmetric product in the image $C_0$ of $\alpha\ot\beta$:
+\begin{lemma}
+The antisymmetric product in $C_0$ is given by
+\be\label{LieC}[ab,a'b']=[a,a'](bb')+(aa')[b,b']\ , a,a'\in A,\ b,b'\in B \ .\ee
+In particular, $C_0$ is closed under the antisymmetric product.
+\end{lemma}
+\begin{proof}
+By \eqref{Leibniz}, \eqref{loc1} and \eqref{loc2} we have
+\[[ab,a'b']=a[b,a'b']+[a,a'b']b=a(a'[b,b'])+([a,a']b')b=[a,a'](b'b)+(aa')[b,b']\ .\]
+\end{proof}
+In the next step we analyze the consequences of the Jacobi identity within $C_0$.
+%By assumption, the antisymmetric product in $C_0$ satisfies the Jacobi identity.
+We compute the second antisymmetric product, with $a_i\in A,b_i\in B,i=1,2,3$, 
+\[[[a_1b_1,a_2b_2],a_3b_3]=[[a_1,a_2]b_1b_2+a_1a_2[b_1,b_2],a_3b_3]\]
+\be\label{Jac1}=[[a_1,a_2],a_3](b_1b_2)b_3+(a_1a_2)a_3[[b_1,b_2],b_3]+[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\ .\ee
+In the last 2 terms we apply the derivation property \eqref{Leibniz} and obtain 4 terms,
+\[[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\]\[=[a_1,a_2]a_3b_1[b_2,b_3]+[a_1,a_2]a_3[b_1,b_2]b_3+a_1[a_2,a_3][b_1,b_2]b_3+[a_1,a_3]a_2[b_1,b_2]b_3\ .\]
+If we perform a cyclic sum over the indices we see that the 1\textsuperscript{st} and the 4\textsuperscript{th} term cancel, and also the 2\textsuperscript{nd} and 3\textsuperscript{rd} term. 
+
+Thus for the Jacobi identity only the first 2 terms in \eqref{Jac1}
+contribute. We use the Jacobi identities in $A$ and $B$,
+\[[[a_1,a_2],a_3]=-[[a_2,a_3],a_1]-[[a_3,a_1],a_2]\ ,\  [[b_1,b_2],b_3]=- [[b_2,b_3],b_1]- [[b_3,b_1],b_2]\ .\]
+The Jacobi identity in $C$ then amounts to the relation
+\[0=[[a_2,a_3],a_1]((b_2b_3)b_1-(b_1b_2)b_3)+[[a_3,a_1],a_2](b_3b_1)b_2-(b_1b_2)b_3)+(a\leftrightarrow b))\]
+\[\equiv [[a_2,a_1,a_3]][b_3,b_2,b_1]+[[a_3,a_2,a_1]][b_3,b_1,b_2]+(a\leftrightarrow b)).\]
+To simplify this expression we choose $a_3=a_1$. Then both associators $[[a_3,a_2,a_1]]$ and $[a_3,a_2,a_1]$ vanish, and we obtain the relation
+\be\label{Jac2}[[a_2,a_1,a_1]][b_3,b_2,b_1]+[a_2,a_1,a_1][[b_3,b_2,b_1]]=0\ .\ee
+We want to exclude the possibility that $[[a_2,a_1,a_1]]=0\forall a_1,a_2\in A$. If all these quantities would vanish, the associator for the antisymmetric product would be totally antisymmetric and hence had to vanish because of the Jacobi identity. We therefore require that the associator of the antisymmetric product in $A$ is nonvanishing. 
+%But then there are also elements $a,a''\in A$ with $[[a,a,a'']]\not=0$.
+%Namely assume that $[a,a']\not=0$ but $[[a,a,a']]=0=[[a,a'],a]$. Then we choose $a''=(a'^2)$, obtain by \eqref{Leibniz}
+%\be\label{Jac3}[[a,a,(a')^2]]=[[a,(a')^2],a]=[2a'[a,a'],a]=-2[a,a']^2\ ,\ee
+%and conclude from \eqref{positiv} that $[a,a']^2\not=0$.   
+Since $C_0$ is as a vector space isomorphic to $A\ot B$,
+%assume that the linear space generated by products of the form $ab$, $a\in,b\in B$ is isomorphic to the tensor product $A\otimes  B$ of the two vector spaces. Then
+%if $[[a_2,a_1,a_2^2]]\not=0$ for some $a_1,a_2\in A$ 
+we find the relation
+\be[b_3,b_2,b_1]=\lambda[[b_3,b_2,b_1]]\label{ass2}\ee
+for some $\lambda \in \RR$.
+
+Finally, we determine the symmetric product in $C_0$, under the assumption that the associator relation \eqref{ass2} holds within $C$. By the independence of the embeddings we have
+\[(ab)b'=a(bb')\text{ and }a(a'b)=(aa')b. \]
+We now compute $(ab)(a'b')$. We have by the definition of the associator
+\[(ab)(a'b')=((ab)a')b'-[ab,a',b]\ .\]
+We apply \eqref{loc2} twice and obtain
+\[((ab)a')b'=(a'(ab))b'=((aa')b)b'=(aa')(bb')\ .\]
+Thus, due to the relation \eqref{ass2} between the associators,
+\[[ab,a',b']=\lambda[[ab,b'],a']=\lambda [a[b,b'],a']=\lambda[a,a'][b,b']\ .\]
+We therefore arrive at the formula for the symmetric product
+\be\label{JordanC}(ab)(a'b')=(aa')(bb')-\lambda[a,a'][b,b']\ .\ee
+We conclude that $C_0$ is also closed under the symmetric product. %Since $C$ is generated by $A$ and $B$, it coincides with $C_0$.
+
+An embedding of $A$ and $B$ can be constructed if both satisfy \eqref{ass2} with the same $\lambda$. Let $A\ot B$ be the tensor product of the vector spaces $A$ and $B$. We introduce a symmetric product
+\[(a\ot b)\circ(a'\ot b')=a a'\ot b b'-\lambda[a,a']\ot[b,b']\]
+and an antisymmetric product
+\[[a\ot b,a'\ot b']=[a,a']\ot b b'+a a'\ot[b,b']\]
+and obtain a q-algebra $A\ot_\lambda B$ together with maps $\alpha:A\to A\ot B,\ a\mapsto a\ot 1$, $\beta:B\to A\ot B,\ b\mapsto 1\ot b$ which satisfy the condition of an independent embedding.
+Moreover, also the associators in $A\ot_{\lambda}B$ satisfy the associator relation \eqref{ass2}.
+
+We arrive at the following theorem:
+\begin{theorem}
+Let $A,B$ be q-algebras with nontrivial associators for the antisymmetric products. Then an embedding as independent subsystems exists if and only if  the associators in $A$ and in $B$ are related by \eqref{ass2} with the same $\lambda$.
+% and let $C=A\otimes_{\lambda}B$ be the tensor product of the vector spaces $A$ and $B$, equipped with the symmetric and the antisymmetric product defined above. 
+%assume that the antisymmetric products of $A$ and $B$ do not vanish identically. Then there is some $\lambda\in\RR$ such that the associators in $A$ and $B$ are related by \eqref{ass}.
+ Moreover, given any such embedding $(\alpha,\beta):A\times B\to C$ where $C$ also satisfies \eqref{ass2}, there is a unique injective homomorphism $\gamma:A\ot_{\lambda}B\to C$ with $\gamma(a\ot b)=\alpha(a)\c\beta(b),\ a\in A,\ b\in B$.
+ \end{theorem}
+ \begin{proof}
+ Assume that an independent embedding exists. Then, from \eqref{Jac2}, we conclude the relation \eqref{ass2} for $B$. The argument for $A$ follows analogously. If, on the other side, \eqref{ass2} holds for both $A$ and $B$, we 
+ can construct $A\ot_{\lambda} B$ as an example for an independent embedding.
+ Now let $(\alpha,\beta):A\times B\to C$ be any independent embedding. The map $\gamma$ given in the Theorem is by definion a linear monomorphism and preserves the unit.  From \eqref{JordanC} and \eqref{LieC} we then conclude that also both products are preserved, hence $\gamma$ is a monomorphism of q-algebras.   
+ \end{proof}
+% We can now compute the antisymmetric products of elements of the form $\alpha(a)\beta(b)$:
+%\be
+%[\alpha(a)\beta(b),\alpha(a')\beta(b')]=\alpha(a)[\beta(b),\alpha(a')\beta(b')]+[\alpha(a),\alpha(a')\beta(b')]\beta(b)
+%\ee
+%\[=\alpha(a)(\alpha(a')[\beta(b)),\beta(b')]+([\alpha(a),\alpha(a')]\beta(b))\beta(b')]\]
+%\[=\alpha(aa')\beta([b,b'])+\alpha([a,a'])\beta(bb')\]
+%In the following we identify the elements of $A$ and $B$ with their images in $C$.
+%By assumption, the antisymmetric product in $C$ satisfies the Jacobi identity. We use this identity for elements of the form 
+%\section{Jordan Product}
+
+
+
+
+
+\section{The operator product}
+Let $A$ be a q-algebra which satisfies the associator equality for some $\lambda\in\RR$. We distinguish three cases:
+\begin{description}
+\item[{$\lambda=0:$}]
+In this case the $\c$-product of $A$ is associative, and we are in the situation of classical physics.
+\item[{$\lambda<0:$}]
+For $\lambda<0$ we can introduce in $A$ an associative noncommutative product by
+\[a\bullet b=a\c b+\sqrt{|\lambda|}[a,b]\ .\]
+The $\c$ product is then $\frac12$ times the anticommutator, and it is easy to see that also the condition \eqref{Jordan} for Jordan algebras is fulfilled. If $A$ is finite dimensional, the positivity condition \eqref{positiv} cannot be fulfilled for associative algebras \parencite{Braun}. It is likely that this remains true in the infinite dimensional case, but existent results use additional input, in particular the existence of a norm. See \parencite{Mc} for an overview.  
+ 
+%It is questionable whether such an algebra can satisfy the positivity condition \eqref{positiv}.
+\item[{$\lambda>0:$}]
+For $\lambda >0$ we define a product in the complexification $A\ot \CC$ of $A$ as in \eqref{complex} with $\hbar=2\sqrt{\lambda}$ and an antilinear involution
+\[(a\ot z)^*=a\ot\overline{z}\ .\]
+$A$ is then the self-adjoint subspace of the complex associative  involutive algebra $A\ot\CC$, hence we obtain the well known structure of quantum theory.
+\end{description}
+
+
+\paragraph{Acknowledgement}
+We thank Christoph Schweigert and Joao Barata for helpful discussions.
+
+
+
+
+
+
+\end{artengenv}

@@ -1,0 +1,868 @@
+%\documentclass[11pt]{amsart}
+%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%%\geometry{landscape}                % Activate for for rotated page geometry
+%%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{epstopdf}
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\documentclass[12pt]{article}
+
+  \linespread{1}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+\usepackage{pgf}
+\usepackage{url}
+\usepackage[colorinlistoftodos,textsize=footnotesize,color=blue!30,textwidth=2cm]{todonotes}
+  \usepackage{enumerate}
+  \usepackage{amsthm,amssymb,amsmath,amscd}
+    \usepackage[retainorgcmds]{IEEEtrantools}
+  \usepackage{eucal}
+  \usepackage{mathrsfs}
+  \usepackage{mathtools}
+  \usepackage{upgreek}
+   \usepackage{dsfont}
+      \usepackage{yfonts}
+  \usepackage[T1]{fontenc}
+ % \usepackage{aurical}
+  \usepackage{bbm}
+  \usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[retainorgcmds]{IEEEtrantools}
+%\usepackage{ctable}
+  \geometry{a4paper}
+  \usepackage{ulem}
+  %---------------------------------------------------------------------------------------------------------
+% colors:
+\definecolor{see}{RGB}{67,75,179}
+\definecolor{darksee}{RGB}{42,44,148}
+\definecolor{honey}{RGB}{232,180,129}
+\definecolor{lighthoney}{RGB}{255,254,220}
+\definecolor{citecol}{rgb}{0.5,0,0} 
+%---------------------------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
+\usepackage[a4paper]{hyperref}
+%\hypersetup
+%{
+%bookmarks=true,
+%bookmarksopen=true,
+%pdftitle="BV formalism",
+%pdfauthor="Katarzyna Rejzner", 
+%pdfsubject="BV formalism", %subject of the document
+%%pdftoolbar=false, % toolbar hidden
+%pdfmenubar=true, %menubar shown
+%pdfhighlight=/O, %effect of clicking on a link
+%colorlinks=true, %couleurs sur les liens hypertextes
+%pdfpagemode=None, %aucun mode de page
+%pdfpagelayout=SinglePage, %ouverture en simple page
+%pdffitwindow=true, %pages ouvertes entierement dans toute la fenetre
+%linkcolor=see, %couleur des liens hypertextes internes
+%citecolor=red!75!darkgray, %couleur des liens pour les citations
+%urlcolor=see %couleur des liens pour les url
+%}
+%---------------------------------------------------------------------------------------------------------
+
+%
+%                                           ==================
+%                                          ||    Definitions of macros ||
+%                                           ==================
+%
+%    ----------------------
+%   | Old-german font |
+%    ---------------------- 
+\newcommand{\Tens}{\mathfrak{Tens}}
+\newcommand{\CE}{\mathfrak{CE}}  
+\newcommand{\E}{\mathfrak{E}}
+%---------------------------------------------------------
+\newcommand{\sm}{\mathfrak{s}}
+\newcommand{\sr}{\mathfrak{s}_{\textrm{r}}}
+%---------------------------------------------------------
+\newcommand{\smp}{\mathfrak{s}_\p}
+%---------------------------------------------------------
+\newcommand{\V}{\mathfrak{V}}
+\newcommand{\Vt}{\widetilde{\mathfrak{V}}}
+%---------------------------------------------------------
+\newcommand{\B}{\mathfrak{B}}
+%---------------------------------------------------------
+\newcommand{\Ba}{\mathfrak{Ba}}
+\newcommand{\BV}{\mathfrak{BV}}
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fa}{\mathfrak{a}}
+\newcommand{\D}{\mathfrak{D}}
+\newcommand{\Cc}{\mathfrak{C}}
+\newcommand{\F}{\mathfrak{F}}
+\newcommand{\Fe}{\overline{\mathfrak{F}}}
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\W}{\mathfrak{W}}
+\newcommand{\K}{\mathfrak{K}}
+\newcommand{\Lor}{\mathfrak{Lor}}
+\newcommand{\fk}{\mathfrak{k}}
+\newcommand{\Nm}{\mathfrak{Nm}}
+\newcommand{\Fen}{\Fe_{\textrm{n}}}
+%\newcommand{\F}{\mathfrak{F}}
+\newcommand{\frakgc}{\mathfrak{g}_c}
+\newcommand{\frakg}{\mathfrak{g}}
+\newcommand{\X}{\mathfrak{X}}
+\newcommand{\Xc}{\mathfrak{X}_c}
+\newcommand{\Diffc}{\mathfrak{Diff}_c}
+\newcommand{\Diffloc}{\mathfrak{Diff}_\loc}
+%---------------------------------------------------------------------------------------------------------
+%    ---------------------
+%   |    Script    font   |
+%    ---------------------
+%---------------------------------------------------------------------------------------------------------
+\newcommand{\euK}{\mathscr{K}} 
+\newcommand{\euH}{\mathscr{H}}  
+\newcommand{\euA}{\mathscr{A}}  
+\newcommand{\euB}{\mathscr{B}}  
+\newcommand{\euF}{\mathscr{F}}
+\newcommand{\euM}{\mathscr{M}}   
+%    ---------------------
+%   | Caligraphic font |
+%    ---------------------
+\newcommand{\CEcal}{\mathcal {CE}}
+\newcommand{\Hcal}{\mathcal {H}}
+\newcommand{\Gcal}{\mathcal{G}}  % gauge group
+\newcommand{\Lcal}{\mathcal {L}}
+\newcommand{\Bcal}{\mathcal {B}}
+\newcommand{\Kcal}{\mathcal{K}}  
+\newcommand{\Ccal}{\mathcal{C}}
+\newcommand{\Dcal}{\mathcal{D}}
+\newcommand{\Ecal}{\mathcal{E}} 
+\newcommand{\Fcal}{\mathcal{F}} 
+\newcommand{\BVcal}{\mathcal{BV}} 
+\newcommand{\Ical}{\mathcal{I}}
+\newcommand{\Ncal}{\mathcal{N}}
+\newcommand{\Mcal}{\mathcal{M}}
+\newcommand{\Ocal}{\mathcal{O}}
+\newcommand{\Scal}{\mathcal{S}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\Tcal}{\mathcal{T}}
+\newcommand{\Vcal}{\mathcal{V}}
+\newcommand{\Wcal}{\mathcal{W}}
+\newcommand{\Xcal}{\mathcal{X}}
+\newcommand{\Zcal}{\mathcal{Z}}
+\newcommand{\AF}{\mathcal{AF}}
+\newcommand{\Ci}{\mathcal{C}^\infty} % smooth functions
+\newcommand{\Fcl}{\mathcal{F}_{cl}} 
+\newcommand{\BVcl}{\mathcal{BV}_{cl}} 
+ \newcommand{\Fq}{\mathcal{BV}_{q}} 
+ \newcommand{\BVq}{\mathcal{BV}_{q}} 
+%---------------------------------------------------------------------------------------------------------
+%    ----------------------
+%   | "mathrm" font     |
+%    ----------------------
+%
+%---------------------------------------------------------------------------------------------------------
+%  ----------------------------------           Categories         ----------------------------------------
+%---------------------------------------------------------------------------------------------------------
+\newcommand{\Ca}{\mathrm{\mathbf{C}}}
+\newcommand{\Da}{\mathrm{\mathbf{D}}}
+\newcommand{\obj}{\mathrm{Obj}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\Nat}{\mathrm{Nat}}
+\newcommand{\Bndl}{\mathrm{\mathbf{Bndl}}}
+\newcommand{\Loc}{\mathrm{\mathbf{Loc}}}       % spacetimes
+\newcommand{\SLoc}{\mathrm{\mathbf{SLoc}}}   % spin spacetimes
+\newcommand{\Grp}{\mathrm{\mathbf{Grp}}}       % groups
+\newcommand{\Obs}{\mathrm{\mathbf{Obs}}}       % observables
+\newcommand{\Sts}{\mathrm{\mathbf{Sts}}}          % sets 
+\newcommand{\Top}{\mathrm{\mathbf{Top}}}          % topological spaces
+\newcommand{\Sym}{\mathrm{\mathbf{Sym}}}     % categorie delle categorie tensoriali
+\newcommand{\Vect}{\mathrm{\mathbf{Vec}}}       % the category of locally convex topological vector
+\newcommand{\dgA}{\mathrm{\mathbf{dgA}}}      % the category of differential graded algebras
+\newcommand{\TA}{\mathrm{\mathbf{TAlg}}}      % the category of differential graded algebras
+\newcommand{\PgAlg}{\mathrm{\mathbf{PgAlg}}}% the category of top. graded Poisson algebras 
+\newcommand{\FM}{\mathrm{\mathbf{Fm}}}        %  the category of fibered manifolds
+\newcommand{\PB}{\mathrm{\mathbf{Pb}}}
+\newcommand{\Mfd}{\mathrm{\mathbf{Mfd}}}
+\newcommand{\CnMfd}{\mathrm{\mathbf{CnMfd}}}
+\newcommand{\Mx}{\mathrm{\mathbf{M}}}
+\newcommand{\Mb}{\mathfrak{M}}  
+%---------------------------------------------------------------------------------------------------------
+%   -----------------------------           Subscripts and other          -------------------------------
+%---------------------------------------------------------------------------------------------------------
+\newcommand{\WF}{\mathrm{WF}}         % wave front set
+\newcommand{\id}{\mathrm{id}}               % identity
+\newcommand{\supp}{\mathrm{supp}}      % support
+\newcommand{\relsupp}{\mathrm{rel\, supp}}      % relative support
+%\newcommand{\dvol}{d\mathrm{vol}_M} % volume form
+\newcommand{\dvol}{\mathrm{dvol}_{\sst{M}}} % volume form
+\newcommand{\Diff}{\mathrm{Diff}}        % diffeomorphisms
+\newcommand{\im}{\mathrm{Im}}             % image
+\newcommand{\ke}{\mathrm{Ker}}            % kernel
+\newcommand{\Der}{\mathrm{Der}}          % derivations
+\newcommand{\tr}{\mathrm{tr}}                 % trace
+%---------------------------------------------------------------------------------------------------------
+\newcommand{\loc}{\mathrm{loc}}
+\newcommand{\inv}{\mathrm{inv}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\ren}{\mathrm{r}}
+\newcommand{\alte}{\mathrm{alt}}
+\newcommand{\pg}{\mathrm{pg}}
+\newcommand{\p}{\mathrm{ph}}
+\newcommand{\af}{\mathrm{af}}
+\newcommand{\ta}{\mathrm{ta}}
+\newcommand{\gh}{\mathrm{gh}}
+\newcommand{\gf}{\mathrm{g}}
+\newcommand{\mc}{{\mu\mathrm{c}}}
+\newcommand{\ml}{\mathrm{ml}}
+\newcommand{\ex}{\mathrm{ext}}
+\newcommand{\sd}{\mathrm{sd}}
+\newcommand{\inte}{\mathrm{int}}
+\newcommand{\wl}{\mathrm{wl}}
+\newcommand{\fix}{\mathrm{fix}}
+%---------------------------------------------------------------------------------------------------------
+%    ------------------------------
+%   | "blackbord bold" font     |
+%    ------------------------------
+\newcommand{\NN}{\mathbb{N}}          % natural naumbers
+\newcommand{\ZZ}{\mathbbmss{Z}}     % Menge der ganzen Zahlen
+\newcommand{\RR}{\mathbb{R}}           % real  numbers
+\newcommand{\CC}{\mathbb{C}}           % complex numbers
+\newcommand{\M}{\mathbb{M}} 	     % Minkowski spacetime
+%---------------------------------------------------------------------------------------------------------
+%    ------------------------------
+%   |  Greek letters                  |
+%    ------------------------------
+\newcommand{\al}{\alpha}
+\newcommand{\bet}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+\newcommand{\De}{\Delta}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\io}{\iota}
+\newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda}
+\newcommand{\si}{\sigma}
+\newcommand{\ph}{\varphi}
+%\newcommand{\Si}{\Sigma}
+%---------------------------------------------------------------------------------------------------------
+%    ------------------------------
+%   |      Products                    |
+%    ------------------------------
+\newcommand{\T}{\cdot_{{}^\Tcal}}
+\newcommand{\TL}{\cdot_{{}^{\Tcal_\Lambda}}}
+\newcommand{\TR}{\cdot_{{}^{\TTR}}}
+\newcommand{\delT}{\delta^{\sst{\TT}}_{S}}
+\newcommand{\delTR}{\delta^{\sst{\TTR}}_S}
+\newcommand{\deL}{\delta^{{\Lambda}}_S}
+\newcommand{\TT}{\Tcal}
+\newcommand{\TTR}{\Tcal_H}
+\newcommand{\TRH}{\cdot_{{}^{\TTR}}}
+%\newcommand{\TTRb}{\overline{\Tcal}_{\!\ren\!,H}}
+\newcommand{\TTL}{\Tcal_{\!\sst{\Lambda}}}
+\newcommand{\TTb}{\overline{\Tcal}}
+%---------------------------------------------------------------------------------------------------------
+%    ------------------------------
+%   |   Gamma operators         |
+%    ------------------------------
+\newcommand{\HFp}{\Gamma'_{H_{\!F}}}
+\newcommand{\HF}{\Gamma_{H_{F}}}
+\newcommand{\DDp}{\Gamma'_{\Delta_{D}}}
+\newcommand{\DD}{\Gamma_{\Delta_{D}}}
+\newcommand{\DC}{\Gamma_{\Delta}}
+\newcommand{\DCp}{\Gamma'_{\Delta}}
+\newcommand{\HL}{\Gamma_{\Lambda}}
+%---------------------------------------------------------------------------------------------------------
+%    ------------------------------
+%   |     Abbreviations             |
+%    ------------------------------
+\newcommand{\paqft}{{p\textsc{aqft}}}
+\newcommand{\tvs}{{\textsc{tvs}}}
+\newcommand{\lcft}{{\textsc{lcft}}}
+\newcommand{\lcvs}{{\textsc{lcvs}}}
+\newcommand{\eom}{{\textsc{eom}}}
+\newcommand{\qme}{{\textsc{qme}}}
+\newcommand{\qft}{{\textsc{qft}}}
+\newcommand{\cme}{{\textsc{cme}}}
+\newcommand{\mwi}{{\textsc{mwi}}}
+%---------------------------------------------------------------------------------------------------------
+%    ---------------------------------------------
+%   |  Differential geometric symbols         |
+%    ---------------------------------------------
+\newcommand{\di}{\textrm{div}}
+\newcommand{\ds}{\textrm{div}^*}
+\newcommand{\Ric}{\textrm{Ric}}
+\newcommand{\Riem}{\textrm{Riem}}
+\newcommand{\DRic}{\textrm{DRic}}
+%---------------------------------------------------------------------------------------------------------
+%    ------------------------------
+%   |  Other symbols               |
+%    ------------------------------
+\newcommand{\sst}[1]{\scriptscriptstyle{#1}}  % small font for the subscripts
+\newcommand{\vr}[1]{\boldsymbol{#1}}         % bold vectors
+\newcommand{\hinv}{*^{\!\sst{-\!1}}}             % inverse of the Hodge star
+\newcommand{\minus}{\sst{-1}}   % power ^{-1}
+\newcommand{\1}{\mathds{1}}                         % identity
+\newcommand{\pa}{\partial}                              % partial derivative
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\AdP}{\mathrm{Ad}P}
+\newcommand{\adP}{\mathrm{ad}P}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\ad}{\mathrm{ad}}
+\newcommand{\Lap}{\bigtriangleup}
+\newcommand {\norm}[1]{\Vert{#1}\Vert}
+\newcommand {\con}[1]{\overline{{#1}}}
+\newcommand{\nul}[1]{\accentset{0}{#1}}
+\newcommand{\form}{\stackrel{\mathrm{formal}}{=}}
+\newcommand{\os}{\stackrel{\mathrm{o.s.}}{=}}
+\newcommand{\osV}{\stackrel{\mathrm{o.s._V}}{=}}
+\newcommand{\gt}[2]{\tilde{\textfrak{g}}^{#1#2}}
+\newcommand{\gtl}[2]{\tilde{\textfrak{g}}_{#1#2}}
+\newcommand{\otoprule}{\midrule[\heavyrulewidth]}
+\newcommand{\Pei}[2]{\lfloor #1, #2 \rfloor}
+\newcommand{\skal}[2]{\left< #1 , #2 \right>}
+\newcommand{\Had}{\textrm{Had}}
+\newcommand{\dgr}{{\sst\ddagger}}
+\newcommand{\msout}[1]{\text{\sout{\ensuremath{#1}}}}
+\newtheorem{theorem}{\mdseries\scshape Theorem}[section]
+\newtheorem{lemma}[theorem]{\mdseries\scshape Lemma}
+\newtheorem{proposition}[theorem]{\mdseries\scshape Proposition}
+\newtheorem{corollary}[theorem]{\mdseries\scshape Corollary}
+\newtheorem{scholium}[theorem]{\mdseries\scshape Scholium}
+\newtheorem{definition}{\mdseries\scshape Definition}[section]
+\newtheorem{remark}[definition]{\mdseries\scshape Remark}
+\newtheorem{conjecture}{\mdseries\scshape Conjecture}[section]
+\newenvironment{ansatz}{\vskip7pt\noindent{\bfseries Ansatz:}}
+
+\begin{document}
+\title{Independent quantum systems and the associativity of the product of quantum observables}
+\author{Klaus Fredenhagen\\II. Institut f\"ur Theoretische Physik\\Universit\"at Hamburg}
+\date{}                                           % Activate to display a given date or no date
+\maketitle
+\begin{abstract}
+We start from the assumption that the real valued observables of a quantum system form a Jordan algebra which is equipped with a compatible Lie product characterizing infinitesimal symmetries,
+and ask whether two such systems can be considered as independent subsystems of a larger system. We show that this  is possible if and only if the associator of the Jordan product is a fixed multiple of the associator of the Lie product. In this case it is known that the two products can be combined to an associative product in the Jordan algebra or its complexification, depending on the sign of the multiple. 
+   
+\end{abstract}
+%\tableofcontents
+\section{Introduction}
+In quantum theory, the (real valued) observables are self-adjoint elements of a complex associative involutive algebra. This structure is quite different from the classical case where the observables form a Poisson algebra, i.e. an algebra over the reals with a commutative and associative product  and a Lie product inducing derivations for the commutative product. 
+
+As emphasized by Niklas Landsman in his book \cite{Landsman}, the structure in the quantum case can be formulated in an analogous way by equipping the selfadjoint part of the algebra with the Jordan product (i.e. $\frac12$ times the anticommutator) and a Lie product defined as $\frac{i}{\hbar}$ times the commutator.
+Both products have a physical motivation quite similar to the classical case. In particular the induced derivations of the Jordan product by the Lie product are motivated by their interpretation as infinitesimal symmetries, and the Jacobi identity for the Lie product may be understood as a consistency condition on symmetries. Both products are non-associative, and the associator of the Jordan product is $\hbar^2/4$ times the associator of the Lie product. 
+
+The question we want to analyze in this paper is whether the latter relation between the associators can be physically motivated. Mathematically it implies that both products can be combined to an associative product in a complexification of the algebra.
+This algebra has an antilinear involution, and its self-adjoint part is the original Jordan algebra with the Lie product given in terms of the commutator.    
+
+To answer this question we add the requirement that independent physical systems can be considered as parts of a larger system, such that the properties of the subsystems are not influenced by the embedding into the larger system. 
+We show that the validity of the Jacobi identity in the composed system implies that the associators of the Jordan products are proportional to the associators of the Lie product, with a proportionality constant which is independent  of the system. If the constant is positive, one obtains an associative product in the complexified algebras, and the composed system arises as the self-adjoint part of the tensor product of the associative algebras. 
+
+The idea to derive the associative product of quantum physics from the composibility of systems was first discussed in the paper of Grgin and Petersen \cite{P} and reconsidered more recently by Kapustin \cite{K} and Moldoveanu \cite{M}. 
+ A related but independent result applying to the infinite dimensional case can be found in \cite{H}, see also the book  \cite{HS}. Contrary to these works we do not make any \textit{a priori} assumptions on the way the larger system can be built from the subsystems. 
+%%%%%%%%%%%%%%%%%
+\section{Jordan-Lie algebras}
+A Jordan algebra is a real vector space $A$ equipped with a commutative product 
+\renewcommand{\c}{\circ}
+$\c$, i.e. a bilinear map
+\[A\times A\to A, (a,b)\mapsto a\c b\]
+with $a\c b=b\c a$.
+This product is not necessarily associative, instead only the weaker relation 
+\be
+\label{Jordan}
+(a^2\c b)\c a=a^2\c(b\c a)
+\ee
+holds, where $a^2=a\c a$. Jordan introduced this concept in order to describe the structure one can expect for quantum observables. Indeed, the linear structure may be motivated by Ehrenfest's Theorem (see e.g. \cite{Arodz}) stating that expectation values add as in classical physics; labeling of measurement results in terms of real numbers may be redefined by applying a mapping $\RR\to\RR$, so in particular squares of observables can be defined, and a commutative product can be introduced by
+\[a\c b\doteq\frac12((a+b)^2-a^2-b^2)\ .\] 
+The condition \eqref{Jordan} follows from the requirement that powers are well defined,
+\[a^n\circ a^m=a^{n+m}\]
+where $a^1=a$, $a^{n+1}=a^n\c a$, under the additional positivity condition
+\be\label{positiv}
+\sum a_i^2=0\ \Rightarrow a_i=0\ .
+\ee
+(See Jordan, von Neumann, Wigner in \cite{JNW}; such a Jordan algebra is called formally real.)
+Finite dimensional Jordan algebras can be classified. Besides the standard case of selfadjoint subalgebras of associative involutive algebras over $\RR,\CC$ or 
+$\mathbb{H}$ (the quaternions) one has a few exceptional cases. We only consider unital Jordan algebras, i.e. there is an element $1\in A$ which satisfies the relation
+\be\label{unit}1\c a=a\forall a\in A\ .\ee 
+For finite dimensional Jordan algebras the existence of the unit is a consequence of the positivity condition \eqref{positiv}.
+
+In addition to the Jordan product of observables one has in quantum theory a Lie product in terms of commutators which describes the dual role of observables as generators of infinitesimal symmetries. The standard example is Heisenberg's equation of motion
+characterizing the time evolution, and it corresponds directly to the Poisson bracket of classical physics, as first observed by Dirac. The arising structure has been analyzed by Landsman \cite{Landsman}. He defines a Jordan-Lie algebra as a Jordan algebra $(A,\c)$ with a Lie product, i.e. a bilinear map   
+\[
+A\times A\to A\ ,\ (a,b)\mapsto [a,b]
+\]
+which is antisymmetric
+\[ [a,b]=-[b,a]\]
+and satisfies the Jacobi identity
+\be\label{Jacobi}[[a,b],c]+[[b,c],a]+[[c,a],b]=0\ .\ee
+The Lie product is related to the Jordan product by two relations. The first is the Leibniz rule
+\be\label{Leibniz}[a\c b,c]=a\c[b,c]+[a,c]\c c\ .\ee
+This rule is motivated by the interpretation of the map $A\ni a\mapsto[a,c]$ as an infinitesimal symmetry.
+The second relation involves the associators. 
+Denote the associator of the Jordan product by
+\[[a,b,c]\doteq(a\c b)\c c-a\c(b\c c)\]
+and the associator of the Lie product by
+\[[[a,b,c]]\doteq[[a,b],c]-[a,[b,c]]\equiv[[a,c],b]\ .\]
+Then the relation is
+\be\label{ass}[a,b,c]=\frac{\hbar^2}{4}[[a,b,c]]\ .\ee
+\newcommand{\ot}{\otimes}
+One then can introduce a product $\cdot$ on the complexification $A\ot\CC$ of $A$, by
+\be\label{complex} (a\ot z)\cdot( b\ot w)=(a\c b)\ot zw+[a,b]\ot\frac{i\hbar zw}{2},\ee
+which turns out to be associative due to \eqref{ass}. One thus obtains the standard structure of the algebra of quantum observables.
+It remains open whether the relation \eqref{ass} between the two associators has a physical interpretation.
+
+We therefore introduce the concept of a q-algebra where the condition \eqref{ass} is not imposed. We also do not require the Jordan condition \eqref{Jordan} and the positivity relation \eqref{positiv}
+\begin{definition}
+A q-algebra is a real vector space equipped with a commutative product $\c$ and an antisymmetric product $[,]$. It contains a unit for the commutative product \eqref{unit} and satisfies the Jacobi identity \eqref{Jacobi} and the Leibniz rule \eqref{Leibniz}.
+\end{definition}
+
+
+%%%%%%%%%%%%
+\section{Independent subsystems}
+Let $A,B$ and $C$ be q-algebras.
+To model the requirement that $A$ and $B$ represent independent subsystems of the larger system represented by $C$ we require the following relations:
+\begin{definition}\label{independent}
+Let $\alpha:A\to C$ and $\beta:B\to C$ be monomorphisms of q-algebras. The pair $(\alpha,\beta)$ is called an embedding of independent subsystems if the following conditions are satisfied: 
+\begin{enumerate}\label{composition}
+\item the map
+\[A\times B\ni(a,b)\to \alpha(a)\c\beta(b)\in C \]
+extends to an injective linear map  $\alpha\ot\beta:A\ot B\to C$.
+\item the infinitesimal symmetries implemented by elements of $A$ act trivially on $B$ and vice versa,
+ \be\label{loc1}[\alpha(a),\beta(b)]=0 \ \forall a\in A,b\in B, \ \ee
+\item the $\c$-product with an observable of one of the subsystems does not affect the $\c$-product in the other subsystem (the observables from $A$ are compatible with the observables from $B$ in the context of Jordan algebras \cite{HS})
+\be\label{loc2}(\alpha(a)\c(\alpha(a')\c\beta(b))=\alpha(a\c a')\c\beta(b)\ , (\alpha(a)\c\beta(b))\c\beta(b')=\alpha(a)\c\beta(b\c b')\ ,\ee
+%\item $C$ is generated by $\alpha(A)$ and $\beta(B)$.
+\end{enumerate}
+\end{definition}
+In the following we omit the symbols $\alpha$ and $\beta$ by identifying $A$ and $B$ with their embeddings in $C$. Moreover, we delete the symbol $\c$ for the commutative product and replace it by juxtaposition. 
+We first determine the antisymmetric product in the image $C_0$ of $\alpha\ot\beta$:
+\begin{lemma}
+The antisymmetric product in $C_0$ is given by
+\be\label{LieC}[ab,a'b']=[a,a'](bb')+(aa')[b,b']\ , a,a'\in A,\ b,b'\in B \ .\ee
+In particular, $C_0$ is closed under the antisymmetric product.
+\end{lemma}
+\begin{proof}
+By \eqref{Leibniz}, \eqref{loc1} and \eqref{loc2} we have
+\[[ab,a'b']=a[b,a'b']+[a,a'b']b=a(a'[b,b'])+([a,a']b')b=[a,a'](b'b)+(aa')[b,b']\ .\]
+\end{proof}
+In the next step we analyze the consequences of the Jacobi identity within $C_0$.
+%By assumption, the antisymmetric product in $C_0$ satisfies the Jacobi identity.
+We compute the second antisymmetric product, with $a_i\in A,b_i\in B,i=1,2,3$, 
+\[[[a_1b_1,a_2b_2],a_3b_3]=[[a_1,a_2]b_1b_2+a_1a_2[b_1,b_2],a_3b_3]\]
+\be\label{Jac1}=[[a_1,a_2],a_3](b_1b_2)b_3+(a_1a_2)a_3[[b_1,b_2],b_3]+[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\ .\ee
+In the last 2 terms we apply the derivation property \eqref{Leibniz} and obtain 4 terms,
+\[[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\]\[=[a_1,a_2]a_3b_1[b_2,b_3]+[a_1,a_2]a_3[b_1,b_2]b_3+a_1[a_2,a_3][b_1,b_2]b_3+[a_1,a_3]a_2[b_1,b_2]b_3\ .\]
+If we perform a cyclic sum over the indices we see that the 1\textsuperscript{st} and the 4\textsuperscript{th} term cancel, and also the 2\textsuperscript{nd} and 3\textsuperscript{rd} term. 
+
+Thus for the Jacobi identity only the first 2 terms in \eqref{Jac1}
+contribute. We use the Jacobi identities in $A$ and $B$,
+\[[[a_1,a_2],a_3]=-[[a_2,a_3],a_1]-[[a_3,a_1],a_2]\ ,\  [[b_1,b_2],b_3]=- [[b_2,b_3],b_1]- [[b_3,b_1],b_2]\ .\]
+The Jacobi identity in $C$ then amounts to the relation
+\[0=[[a_2,a_3],a_1]((b_2b_3)b_1-(b_1b_2)b_3)+[[a_3,a_1],a_2](b_3b_1)b_2-(b_1b_2)b_3)+(a\leftrightarrow b))\]
+\[\equiv [[a_2,a_1,a_3]][b_3,b_2,b_1]+[[a_3,a_2,a_1]][b_3,b_1,b_2]+(a\leftrightarrow b)).\]
+To simplify this expression we choose $a_3=a_1$. Then both associators $[[a_3,a_2,a_1]]$ and $[a_3,a_2,a_1]$ vanish, and we obtain the relation
+\be\label{Jac2}[[a_2,a_1,a_1]][b_3,b_2,b_1]+[a_2,a_1,a_1][[b_3,b_2,b_1]]=0\ .\ee
+We want to exclude the possibility that $[[a_2,a_1,a_1]]=0\forall a_1,a_2\in A$. If all these quantities would vanish, the associator for the antisymmetric product would be totally antisymmetric and hence had to vanish because of the Jacobi identity. We therefore require that the associator of the antisymmetric product in $A$ is nonvanishing. 
+%But then there are also elements $a,a''\in A$ with $[[a,a,a'']]\not=0$.
+%Namely assume that $[a,a']\not=0$ but $[[a,a,a']]=0=[[a,a'],a]$. Then we choose $a''=(a'^2)$, obtain by \eqref{Leibniz}
+%\be\label{Jac3}[[a,a,(a')^2]]=[[a,(a')^2],a]=[2a'[a,a'],a]=-2[a,a']^2\ ,\ee
+%and conclude from \eqref{positiv} that $[a,a']^2\not=0$.   
+Since $C_0$ is as a vector space isomorphic to $A\ot B$,
+%assume that the linear space generated by products of the form $ab$, $a\in,b\in B$ is isomorphic to the tensor product $A\otimes  B$ of the two vector spaces. Then
+%if $[[a_2,a_1,a_2^2]]\not=0$ for some $a_1,a_2\in A$ 
+we find the relation
+\be[b_3,b_2,b_1]=\lambda[[b_3,b_2,b_1]]\label{ass2}\ee
+for some $\lambda \in \RR$.
+
+Finally, we determine the symmetric product in $C_0$, under the assumption that the associator relation \eqref{ass2} holds within $C$. By the independence of the embeddings we have
+\[(ab)b'=a(bb')\text{ and }a(a'b)=(aa')b. \]
+We now compute $(ab)(a'b')$. We have by the definition of the associator
+\[(ab)(a'b')=((ab)a')b'-[ab,a',b]\ .\]
+We apply \eqref{loc2} twice and obtain
+\[((ab)a')b'=(a'(ab))b'=((aa')b)b'=(aa')(bb')\ .\]
+Thus, due to the relation \eqref{ass2} between the associators,
+\[[ab,a',b']=\lambda[[ab,b'],a']=\lambda [a[b,b'],a']=\lambda[a,a'][b,b']\ .\]
+We therefore arrive at the formula for the symmetric product
+\be\label{JordanC}(ab)(a'b')=(aa')(bb')-\lambda[a,a'][b,b']\ .\ee
+We conclude that $C_0$ is also closed under the symmetric product. %Since $C$ is generated by $A$ and $B$, it coincides with $C_0$.
+
+An embedding of $A$ and $B$ can be constructed if both satisfy \eqref{ass2} with the same $\lambda$. Let $A\ot B$ be the tensor product of the vector spaces $A$ and $B$. We introduce a symmetric product
+\[(a\ot b)\circ(a'\ot b')=a a'\ot b b'-\lambda[a,a']\ot[b,b']\]
+and an antisymmetric product
+\[[a\ot b,a'\ot b']=[a,a']\ot b b'+a a'\ot[b,b']\]
+and obtain a q-algebra $A\ot_\lambda B$ together with maps $\alpha:A\to A\ot B,\ a\mapsto a\ot 1$, $\beta:B\to A\ot B,\ b\mapsto 1\ot b$ which satisfy the condition of an independent embedding.
+Moreover, also the associators in $A\ot_{\lambda}B$ satisfy the associator relation \eqref{ass2}.
+
+We arrive at the following theorem:
+\begin{theorem}
+Let $A,B$ be q-algebras with nontrivial associators for the antisymmetric products. Then an embedding as independent subsystems exists if and only if  the associators in $A$ and in $B$ are related by \eqref{ass2} with the same $\lambda$.
+% and let $C=A\otimes_{\lambda}B$ be the tensor product of the vector spaces $A$ and $B$, equipped with the symmetric and the antisymmetric product defined above. 
+%assume that the antisymmetric products of $A$ and $B$ do not vanish identically. Then there is some $\lambda\in\RR$ such that the associators in $A$ and $B$ are related by \eqref{ass}.
+ Moreover, given any such embedding $(\alpha,\beta):A\times B\to C$ where $C$ also satisfies \eqref{ass2}, there is a unique injective homomorphism $\gamma:A\ot_{\lambda}B\to C$ with $\gamma(a\ot b)=\alpha(a)\c\beta(b),\ a\in A,\ b\in B$.
+ \end{theorem}
+ \begin{proof}
+ Assume that an independent embedding exists. Then, from \eqref{Jac2}, we conclude the relation \eqref{ass2} for $B$. The argument for $A$ follows analogously. If, on the other side, \eqref{ass2} holds for both $A$ and $B$, we 
+ can construct $A\ot_{\lambda} B$ as an example for an independent embedding.
+ Now let $(\alpha,\beta):A\times B\to C$ be any independent embedding. The map $\gamma$ given in the Theorem is by definion a linear monomorphism and preserves the unit.  From \eqref{JordanC} and \eqref{LieC} we then conclude that also both products are preserved, hence $\gamma$ is a monomorphism of q-algebras.   
+ \end{proof}
+% We can now compute the antisymmetric products of elements of the form $\alpha(a)\beta(b)$:
+%\be
+%[\alpha(a)\beta(b),\alpha(a')\beta(b')]=\alpha(a)[\beta(b),\alpha(a')\beta(b')]+[\alpha(a),\alpha(a')\beta(b')]\beta(b)
+%\ee
+%\[=\alpha(a)(\alpha(a')[\beta(b)),\beta(b')]+([\alpha(a),\alpha(a')]\beta(b))\beta(b')]\]
+%\[=\alpha(aa')\beta([b,b'])+\alpha([a,a'])\beta(bb')\]
+%In the following we identify the elements of $A$ and $B$ with their images in $C$.
+%By assumption, the antisymmetric product in $C$ satisfies the Jacobi identity. We use this identity for elements of the form 
+%\section{Jordan Product}
+\section{The operator product}
+Let $A$ be a q-algebra which satisfies the associator equality for some $\lambda\in\RR$. We distinguish three cases:
+\begin{description}
+\item[{$\lambda=0:$}]
+In this case the $\c$-product of $A$ is associative, and we are in the situation of classical physics.
+\item[{$\lambda<0:$}]
+For $\lambda<0$ we can introduce in $A$ an associative noncommutative product by
+\[a\bullet b=a\c b+\sqrt{|\lambda|}[a,b]\ .\]
+The $\c$ product is then $\frac12$ times the anticommutator, and it is easy to see that also the condition \eqref{Jordan} for Jordan algebras is fulfilled. If $A$ is finite dimensional, the positivity condition \eqref{positiv} cannot be fulfilled for associative algebras \cite{Braun}. It is likely that this remains true in the infinite dimensional case, but existent results use additional input, in particular the existence of a norm. See \cite{Mc} for an overview.  
+ 
+%It is questionable whether such an algebra can satisfy the positivity condition \eqref{positiv}.
+\item[{$\lambda>0:$}]
+For $\lambda >0$ we define a product in the complexification $A\ot \CC$ of $A$ as in \eqref{complex} with $\hbar=2\sqrt{\lambda}$ and an antilinear involution
+\[(a\ot z)^*=a\ot\overline{z}\ .\]
+$A$ is then the self-adjoint subspace of the complex associative  involutive algebra $A\ot\CC$, hence we obtain the well known structure of quantum theory.
+\end{description}
+{\bf Acknowledgement}
+
+\noindent
+We thank Christoph Schweigert and Joao Barata for helpful discussions.
+\begin{thebibliography}{999}
+\bibitem{Arodz} Arod\'z H., Ehrenfest's Theorem Revisited, ``Philosophical Problems in Science (Zagadnienia Filozoficzne w Nauce)'', 66, 2019, s. ??-??
+\bibitem{Landsman} N.~P.~Landsman, ``Mathematical Topics between classical and quantum mechanics'', Springer 1998
+\bibitem{JNW} P.~Jordan, J.~von Neumann and E.~Wigner, ``On an algebraic generalizatin of the quantum mechanical formalism'', Ann. Math. {\bf 36}, 29-64 (1934)
+\bibitem{Braun} H.~Braun and M.~Koecher, ``Jordan-Algebren'' , Springer 1966
+\bibitem{Mc} K.~McCrimmon, ``A taste of Jordan algebras'', Spinger 2004
+%\bibitem{W} A.~Wulfsohn,``Tensor products of Jordan algebras'', Can.~J.~ Math., Vol. XXVII, 1975, pp. 60-74
+\bibitem{P} E.~Grgin, A.~Petersen, ``Algebraic Implications of Composability
+of Physical Systems'', Commun.~Math.~Phys. {\bf 50}, 177Ñ188 (1976)
+\bibitem{H} H.~Hanche-Olsen, ``JB-algebras with tensor products are C*-algebras'', Lecture Notes in Mathematics 1132, 223-229 (1985)
+\bibitem{HS} H.~Hanche-Olsen, E.~St\o{}rmer, ``Jordan operator algebras, Monographs and Studies in Mathematics 21, Pitman Boston-London-Melbourne 1984
+\bibitem{K}  A.~Kapustin, ``Is quantum mechanics exact?'', Journ. ~Math.~ Phys. {\bf 54}, 062107 (2013)
+\bibitem{M}
+  F.~Moldoveanu,
+  ``Derivation of Quantum Mechanics algebraic structure from invariance of the laws of Nature under system composition and Leibniz identity,''
+  arXiv:1505.05577 [quant-ph].
+\end{thebibliography} 
+\end{document}
+\section{Appendix}
+Let $A$ be a vector space over the reals with 2 products, a symmetric one
+\[(A\ot\lambda\times A\to A, (a,b)\mapsto ab=ba\]
+and an antisymmetric one
+\[A\times A\to A, (a,b)\to[a,b]=-[b,a]\ .\]
+Both products are bilinear, and the antisymmetric product induces derivations for both products
+\be [a,[b,c]]=[[a,b],c]+[b,[a,c]]\ee
+(i.e. the Jacobi identity) and
+\be [a,bc]=[a,b]c+b[a,c]\ .\ee
+Moreover, we assume that $A$ contains a unit element 1 for the symmetric product, i.e. $1a=a\forall a\in A$. 
+The products are not assumed to be associative. We denote the associator of the symmetric product by
+\[[a,b,c]=(ab)c-a(bc)\]
+and that of the antisymmetric product by
+\[[[a,b,c]]=[[a,b],c]-[a,[[b,c]]\equiv[[a,c],b]\ .\]
+The antisymmetric product with the unit element  vanishes,
+namely
+\[[1,a]=[1\cdot1,a]=1[1,a]+[1,a]1=[1,a]+[1,a]\ ,\text{hence }[1,a]=0\ .\]
+Also both associators vanish if one of the entries is the unit element.
+ 
+Now let $B$ be any other vector space which has also 2 products with the properties listed above, including the existence of a unit element.
+We then can introduce 2 products on the tensor product $C=A\otimes B$ of the two vector spaces, a symmetric one
+\[(a_1\otimes b_1)(a_2\otimes b_2)=a_1a_2\otimes b_1 b_2-\lambda[a_1,a_2]\otimes[b_1,b_2] \ ,\]
+with a real number $\lambda$, and an antisymmetric one
+\[[a_1\otimes b_1,a_2\otimes b_2]=[a_1,a_2]\otimes b_1 b_2+a_1a_2\otimes[b_1,b_2]\ .\]
+We want to find conditions that guarantee that again the antisymmetric product induces derivations for both products.
+
+We start by  checking whether the antisymmetric product in $A\otimes B$ induces a derivation on the algebra with the 
+symmetric product.
+We have the following result:
+\begin{proposition}
+Let $A,B$ be algebras with a symmetric and an antisymmetric product with the properties listed above. Let $C=A\otimes_{\lambda}B$ be the tensor product of the vector spaces $A$ and $B$, equipped with the symmetric and the antisymmetric product defined above. Moreover, assume that the antisymmetric products of $A$ and $B$ do not vanish identically. Then the products in $C$ satisfy the derivation properties if and only if the associators in $A$ and $B$ are related by \eqref{ass}.
+%\be\label{ass}[a,b,c]=\lambda[[a,b,c]]\ .\ee
+\end{proposition}
+\begin{proof}
+(i) Assume that the derivation property \eqref{der2} in $C$ holds. Then
+\[[(a_1\otimes b_1)(a_2\otimes b_2),a_3\otimes b_3]=(a_1\otimes b_1)[a_2\otimes b_2,a_3\otimes b_3]+[a_1\otimes b_1,a_3\otimes b_3](a_2\otimes b_2)\ .\]
+We choose $a_1=1$ and $a_2,a_3$ such that $[a_2,a_3]\not=0$. 
+We compute
+\[K=[(1\otimes b_1)(a_2\otimes b_2),a_3\otimes b_3]=[a_2\otimes b_1b_2,a_3\otimes b_3]=[a_2,a_3]\otimes (b_1b_2)b_3+a_2a_3\otimes[b_1b_2,b_3]\ ,\]
+\[L=(1\otimes b_1)[a_2\otimes b_2,a_3\otimes b_3]=[a_2,a_3]\otimes b_1(b_2b_3)+a_2a_3\otimes b_1[b_2,b_3] \ ,\]
+\[M=[1\otimes b_1,a_3\otimes b_3](a_2\otimes b_2)=a_3a_2\otimes[b_1,b_3] b_2-\lambda[a_3,a_2]\otimes[[b_1,b_3],b_2]\ ,\]
+hence
+\[0=K-L-M=[a_2,a_3]\otimes((b_1b_2)b_3-b_1(b_2b_3)-\lambda[[b_1,b_3],b_2])+a_2a_3\otimes([b_1b_2,b_3]-b_1[b_2,b_3]-[b_1,b_3] b_2)\]
+\[=[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])\ .\]
+This proves the identity \eqref{ass} for the associators in $B$, and the identity \eqref{ass} for the associators in $A$ follows in the same way. 
+
+(ii) Now assume that the identity \eqref{ass} holds in $A$. Then we define a new product by
+\be a\star b=ab+\sqrt{-\lambda}[a,b] \ .\ee
+In case $\lambda>0$ this product is understood in the complexification of $A$. 
+
+The associator of this product is
+\be
+(a\star b)\star c-a\star(b\star c)=[a,b,c]-\lambda[[a,b,c]]+\sqrt{\lambda}([a,b]c+[ab,c]-a[b,c]-[a,bc])\ee
+\be=\sqrt{\lambda}([a,b]c+a[b,c]+[a,c]b-a[b,c]-[a,b]c-b[a,c])=0\ .\ee
+Hence $(A,\star)$ (or its complexification in the case $\lambda>0$) is an associative algebra.
+In the same way we define an associative algebra $(B,\star)$ if \eqref{ass} holds for $B$. We then construct the tensor product of associative algebras
+with product
+\be (a_1\otimes b_1)\star(a_2\otimes b_2)=(a_1\star a_2)\otimes (b_1\star b_2) \ee
+This product is associative. Its symmetric part is the symmetric product in $A\otimes_{\lambda} B$, and the antisymmetric part is $\sqrt{-\lambda}$ times the antisymmetric product in  $A\otimes_{\lambda} B$. It is well known that the symmetric and the antisymmetric parts of an associative product satisfy the derivation properties \eqref{der1} and \eqref{der2}. 
+\end{proof}
+We see that the compatibility with the tensorial structure implies that the two products combine to an associative product. Moreover, it is easily seen that the fact that the symmetric product in $A$ is the symmetric part of an associative product implies the relation
+\be
+a^2(ba)=(a^2b)a\ee
+which means that $A$, equipped with the symmetric product, is a Jordan algebra.
+%\end{document}
+\section{Detailed calculations}
+\[ K\equiv [(a_1\otimes b_1)(a_2\otimes b_2),a_3\otimes b_3]=[a_1a_2\otimes b_1b_2-\lambda[a_1,a_2]\otimes[b_1,b_2],a_3\otimes b_3]\]
+\[=[a_1a_2,a_3]\otimes(b_1b_2)b_3+(a_1a_2)a_3\otimes[b_1b_2,b_3]-\lambda[[a_1,a_2],a_3]\otimes[b_1,b_2]b_3-\lambda[a_1,a_2]a_3\otimes[[b_1,b_2],b_3]\ .\]
+We exploit the derivation property for both products,
+\[[ab,c]=a[b,c]+[a,c]b\ ,\ [[a,b],c]=[a,[b,c]]+[[a,c],b]\] 
+and obtain a sum of 8 terms
+\[K=
+a_1[a_2,a_3]\otimes(b_1b_2)b_3%1
++[a_1,a_3]a_2\otimes(b_1b_2)b_3%2
++(a_1a_2)a_3\otimes b_1[b_2,b_3]%3
++(a_1a_2)a_3\otimes[b_1,b_3]b_2%4
+\]
+\[-\lambda[a_1,[a_2,a_3]]\otimes[b_1,b_2]b_3%5
+-\lambda[[a_1,a_3],a_2]\otimes[b_1,b_2]b_3%6
+-\lambda[a_1,a_2]a_3\otimes[b_1,[b_2,b_3]]%7
+-\lambda[a_1,a_2]a_3\otimes[[b_1,b_3],b_2]]%8
+\ .\]
+We denote the $i$th term in the sum by $K_i$, $i=1,\dots,8$, hence $K=\sum K_i$.
+
+In the same way we compute
+\[L\equiv (a_1\otimes b_1)[a_2\otimes b_2,a_3\otimes b_3]=(a_1\otimes b_1)([a_2,a_3]\otimes b_2b_3+a_2a_3\otimes [b_2,b_3])\]
+\[=a_1[a_2,a_3]\otimes b_1(b_2b_3)+a_1(a_2a_3)\otimes b_1[b_2,b_3]\]
+\[-\lambda [a_1,[a_2,a_3]]\otimes [b_1,b_2b_3]-\lambda[a_1,a_2a_3]\otimes[b_1,[b_2,b_3]]\]
+\[=a_1[a_2,a_3]\otimes b_1(b_2b_3)%1
++a_1(a_2a_3)\otimes b_1[b_2,b_3]%2
+\]
+\[-\lambda [a_1,[a_2,a_3]]\otimes [b_1,b_2]b_3%3
+-\lambda [a_1,[a_2,a_3]]\otimes b_2[b_1,b_3]%4
+-\lambda[a_1,a_2]a_3\otimes[b_1,[b_2,b_3]]%5
+-\lambda[a_1,a_3]a_2\otimes[b_1,[b_2,b_3]]%6
+\]
+as well as
+\[M\equiv [a_1\otimes b_1,a_3\otimes b_3](a_2\otimes b_2)=([a_1,a_3]\otimes b_1b_3+a_1a_3\otimes [b_1,b_3])(a_2\otimes b_2)\]
+\[=[a_1,a_3]a_2\otimes (b_1b_3)b_2+(a_1a_3)a_2\otimes [b_1,b_3]b_2\]
+\[-\lambda [[a_1,a_3],a_2]\otimes [b_1b_3,b_2]-\lambda[a_1a_3,a_2]\otimes[[b_1,b_3],b_2]\]
+\[=[a_1,a_3]a_2\otimes (b_1b_3)b_2%1
++(a_1a_3)a_2\otimes [b_1,b_3]b_2%2
+\]
+\[-\lambda [[a_1,a_3],a_2]\otimes b_1[b_3,b_2]%3
+-\lambda [[a_1,a_3],a_2]]\otimes [b_1,b_2]b_3%4
+-\lambda a_1[a_3,a_2]\otimes[[b_1,b_3],b_2]%5
+-\lambda[a_1,a_2]a_3\otimes[[b_1,b_3],b_2]%6
+\]
+and denote the 6 terms in the first sum by $L_i$, $i=1,\ldots,6$ and in the second sum by $M_i$, $i=1,\dots,6$, hence $L=\sum L_i$ and $M=\sum M_i$.
+
+We observe
+\[K_5=-\lambda[a_1,[a_2,a_3]]\otimes[b_1,b_2]b_3=L_3\]
+\[K_6=-\lambda[[a_1,a_3],a_2]\otimes[b_1,b_2]b_3=M_4\]
+\[K_7=-\lambda[a_1,a_2]a_3\otimes[b_1,[b_2,b_3]]=L_5\]
+\[K_8=-\lambda[a_1,a_2]a_3\otimes[[b_1,b_3],b_2]]=M_6\]
+\[K_1-L_1-M_5=a_1[a_2,a_3]\otimes((b_1b_2)b_3-b_1(b_2b_3)-\lambda[[b_1,b_3],b_2])=a_1[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])\]
+\[K_2-M_1-L_6=[a_1,a_3]a_2\otimes((b_1b_2)b_3-(b_1b_3)b_2+\lambda[b_1[b_2,b_3]])=[a_1,a_3]a_2\otimes([b_2,b_1,b_3)-\lambda[[b_2,b_1,b_3]])\]
+\[K_3-L_2-M_3=((a_1a_2)a_3-a_1(a_2a_3)-\lambda [[a_1,a_3],a_2])\otimes b_1[b_2,b_3]=([a_1,a_2,a_3]-\lambda[[a_1,a_2,a_3]])\otimes b_1[b_2,b_3]\]
+\[K_4-M_2-L_4=(a_1a_2)a_3-(a_1a_3)a_2+\lambda [a_1,[a_2,a_3]])\otimes b_2[b_1,b_3]=([a_2,a_1,a_3]-\lambda[[a_2,a_1,a_3]])\otimes b_2[b_1,b_3]\]
+We introduce the associators for both products,
+\[[a,b,c]=(ab)c-a(bc)\]
+and 
+\[[[a,b,c]]=[[a,b],c]-[a,[b,c]]\equiv[[a,c],b] \ .\]
+In terms of associators
+\[K-L-M=a_1[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])+[a_1,a_3]a_2\otimes([b_2,b_1,b_3)-\lambda[[b_2,b_1,b_3]])\]
+\[+([a_1,a_2,a_3]-\lambda[[a_1,a_2,a_3]])\otimes b_1[b_2,b_3]+([a_2,a_1,a_3]-\lambda[[a_2,a_1,a_3]])\otimes b_2[b_1,b_3]\]
+We now choose $a_1=1$. Then the associators containing $a_1$ vanish, and we obtain
+\[K-L-M=[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])=[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])\]
+Therefore, provided the antisymmetric product in $A$ is nonvanishing, the associators in $B$ have to satisfy the relation
+ \begin{equation}\label{associator}
+[a,b,c]=\lambda[[a,b,c]]\ .
+\end{equation}
+In view of this result, we may simplify the calculation above by considering only the case $a_1=1$.
+Then
+\[K=[(1\otimes b_1)(a_2\otimes b_2),a_3\otimes b_3]=[a_2\otimes b_1b_2,a_3\otimes b_3]=[a_2,a_3]\otimes (b_1b_2)b_3+a_2a_3\otimes[b_1b_2,b_3]\ ,\]
+\[L=(1\otimes b_1)[a_2\otimes b_2,a_3\otimes b_3]=[a_2,a_3]\otimes b_1(b_2b_3)+a_2a_3\otimes b_1[b_2,b_3] \ ,\]
+\[M=[1\otimes b_1,a_3\otimes b_3](a_2\otimes b_2)=a_3a_2\otimes[b_1,b_3] b_2-\lambda[a_3,a_2]\otimes[[b_1,b_3],b_2]\ ,\]
+hence
+\[K-L-M=[a_2,a_3]\otimes((b_1b_2)b_3-b_1(b_2b_3)-\lambda[[b_1,b_3],b_2])=[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])\]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\[\sum \epsilon_{ijk}[[a_i\otimes b_i,a_j\otimes b_j],a_k\otimes b_k]\]
+\[=\frac13\sum \epsilon_{ijk}([[a_i,a_k,a_j]]\otimes([b_i,b_j,b_k])+[[a_i,a_k,a_j]]\otimes([b_j,b_i,b_k])\]
+\[+[a_i,a_j,a_k]\otimes[[b_i,b_k,b_j]]+[a_j,a_i,a_k]\otimes[[b_i,b_k,b_j]])\]
+We now choose $a_1=1$. Then 
+
+
+Again we see that the derivation property is satisfied provided the associators fulfil \eqref{associator}.
+We start by looking at the Jacobi identity. We have
+\[\sum \epsilon_{ijk}[[a_i\otimes b_i,a_j\otimes b_j],a_k\otimes b_k]=\sum \epsilon_{ijk}\left[[a_i,a_j]\otimes b_ib_j+a_ia_j\otimes [b_i,b_j],a_k\otimes b_k\right]\]
+\begin{equation}\label{Jacobi1}
+=\sum \epsilon_{ijk}\left([[a_i,a_j],a_k]\otimes (b_ib_j)b_k+[a_i,a_j]a_k\otimes [b_ib_j,b_k]+[a_ia_j,a_k]\otimes [b_i,b_j]b_k+(a_ia_j)a_k\otimes [[b_i,b_j],b_k]\right)\ .
+\end{equation}
+We first show that the sum over the second and third term vanishes. Namely
+\[\sum \epsilon_{ijk}\left([a_i,a_j]a_k\otimes [b_ib_j,b_k]+[a_ia_j,a_k]\otimes [b_i,b_j]b_k\right)=\]
+\[\sum \epsilon_{ijk}\left([a_i,a_j]a_k\otimes ([b_i,b_k]b_j+b_i[b_j,b_k])+(a_i[a_j,a_k]+[a_i,a_k]a_j)\otimes [b_i,b_j]b_k\right)\ .\]
+We have
+\[\sum \epsilon_{ijk}\left([a_i,a_j]a_k\otimes[b_i,b_k]b_j+[a_i,a_k]a_j\otimes[b_i,b_j]b_k\right)=\sum (\epsilon_{ijk}+\epsilon_{ikj})[a_i,a_j]a_k\otimes[b_i,b_k]b_j=0\ .\]
+For the remaining terms we obtain
+\[\sum\epsilon_{ijk}\left([a_i,a_j]a_k\otimes [b_j,b_k]b_i+[a_j,a_k]a_i\otimes [b_i,b_j]b_k\right)=\sum\epsilon_{ijk}\left([a_i,a_j]a_k\otimes ([b_j,b_k]b_i+[b_k,b_i]b_j\right)\ .\]
+But both factors in the tensor product are antisymmetric under the exchange of $i$ and $j$, hence the product is symmetric and the sum vanishes.
+
+We conclude that only the first and the fourth term in \eqref{Jacobi1} contribute,
+\[\sum \epsilon_{ijk}[[a_i\otimes b_i,a_j\otimes b_j],a_k\otimes b_k]\]  
+\begin{equation}\label{Jacobi2}
+=\sum \epsilon_{ijk}\left([[a_i,a_j],a_k]\otimes (b_ib_j)b_k+(a_ia_j)a_k\otimes [[b_i,b_j],b_k]\right)\ .
+\end{equation}
+We now use the fact that the antisymmetric products in $A$ and in $B$ satisfy the Jacobi identity. Hence 
+\[[[a_i,a_j],a_k]=\frac13\left(2[[a_i,a_j],a_k]-[[a_j,a_k],a_i-[[a_k,a_i],a_j]\right)\]
+and an analogous formula where $a$ is replaced by $b$. We insert these relations into \eqref{Jacobi2}, relabel the indices and use the fact that $\epsilon$ is invariant under cyclic permutations.
+We arrive at
+\[\sum \epsilon_{ijk}[[a_i\otimes b_i,a_j\otimes b_j],a_k\otimes b_k]\]  
+\[
+=\frac13\sum \epsilon_{ijk}\left([[a_i,a_j],a_k]\otimes \left(2(b_ib_j)b_k-(b_jb_k)b_i-(b_kb_i)b_j\right)\right. \]
+\[+\left(2(a_ia_j)a_k-(a_ja_k)a_i-(a_ka_i)a_j\right)\otimes[[b_i,b_j],b_k])\]
+We introduce the associators for both products,
+\[[a,b,c]=(ab)c-a(bc)\]
+and 
+\[[[a,b,c]]=[[a,b],c]-[a,[b,c]]\equiv[[a,c],b] \ .\]
+In terms of associators
+\[\sum \epsilon_{ijk}[[a_i\otimes b_i,a_j\otimes b_j],a_k\otimes b_k]\]
+\[=\frac13\sum \epsilon_{ijk}([[a_i,a_k,a_j]]\otimes([b_i,b_j,b_k])+[[a_i,a_k,a_j]]\otimes([b_j,b_i,b_k])\]
+\[+[a_i,a_j,a_k]\otimes[[b_i,b_k,b_j]]+[a_j,a_i,a_k]\otimes[[b_i,b_k,b_j]])\]
+We now assume that the associators in $B$ are related by \eqref{ass}.
+%\begin{equation}\label{associator}
+%[a,b,c]=\lambda[[a,b,c]]\ .
+%\end{equation}
+This is the case when $B$ is the real part of a complex C*-algebra with the anticommutator times $\frac12$ as the symmetric 
+product and the commutator times $2i\sqrt{\lambda}$ as the antisymmetric product. Here $\lambda\ge0$. Then
+\[\sum \epsilon_{ijk}[[a_i\otimes b_i,a_j\otimes b_j],a_k\otimes b_k]\]
+\[=\frac13\sum \epsilon_{ijk}(\lambda[[a_i,a_k,a_j]]-[a_i,a_j,a_k])\otimes([[b_i,b_j,b_k]]+[[b_j,b_i,b_k]])\]
+We conclude that the Jacobi identity in $A\otimes B$ holds if also the associators in $A$ satisfy
+\eqref{associator}.
+
+We now check whether the antisymmetric product in $A\otimes B$ induces a derivation on the algebra with the 
+symmetric product.
+We have
+\[ K\equiv [(a_1\otimes b_1)(a_2\otimes b_2),a_3\otimes b_3]=[a_1a_2\otimes b_1b_2+\lambda[a_1,a_2]\otimes[b_1,b_2],a_3\otimes b_3]\]
+\[=[a_1a_2,a_3]\otimes(b_1b_2)b_3+(a_1a_2)a_3\otimes[b_1b_2,b_3]+\lambda[[a_1,a_2],a_3]\otimes[b_1,b_2]b_3+\lambda[a_1,a_2]a_3\otimes[[b_1,b_2],b_3]\ .\]
+We exploit the derivation property for both products,
+\[[ab,c]=a[b,c]+[a,c]b\ ,\ [[a,b],c]=[a,[b,c]]+[[a,c],b]\] 
+and obtain a sum of 8 terms
+\[K=
+a_1[a_2,a_3]\otimes(b_1b_2)b_3%1
++[a_1,a_3]a_2\otimes(b_1b_2)b_3%2
++(a_1a_2)a_3\otimes b_1[b_2,b_3]%3
++(a_1a_2)a_3\otimes[b_1,b_3]b_2%4
+\]
+\[-\lambda[a_1,[a_2,a_3]]\otimes[b_1,b_2]b_3%5
+-\lambda[[a_1,a_3],a_2]\otimes[b_1,b_2]b_3%6
+-\lambda[a_1,a_2]a_3\otimes[b_1,[b_2,b_3]]%7
+-\lambda[a_1,a_2]a_3\otimes[[b_1,b_3],b_2]]%8
+\ .\]
+We denote the $i$th term in the sum by $K_i$, $i=1,\dots,8$, hence $K=\sum K_i$.
+
+In the same way we compute
+\[L\equiv (a_1\otimes b_1)[a_2\otimes b_2,a_3\otimes b_3]=(a_1\otimes b_1)([a_2,a_3]\otimes b_2b_3+a_2a_3\otimes [b_2,b_3])\]
+\[=a_1[a_2,a_3]\otimes b_1(b_2b_3)+a_1(a_2a_3)\otimes b_1[b_2,b_3]\]
+\[+\lambda [a_1,[a_2,a_3]]\otimes [b_1,b_2b_3]+\lambda[a_1,a_2a_3]\otimes[b_1,[b_2,b_3]]\]
+\[=a_1[a_2,a_3]\otimes b_1(b_2b_3)%1
++a_1(a_2a_3)\otimes b_1[b_2,b_3]%2
+\]
+\[-\lambda [a_1,[a_2,a_3]]\otimes [b_1,b_2]b_3%3
+-\lambda [a_1,[a_2,a_3]]\otimes b_2[b_1,b_3]%4
+-\lambda[a_1,a_2]a_3\otimes[b_1,[b_2,b_3]]%5
+-\lambda[a_1,a_3]a_2\otimes[b_1,[b_2,b_3]]%6
+\]
+as well as
+\[M\equiv [a_1\otimes b_1,a_3\otimes b_3](a_2\otimes b_2)=([a_1,a_3]\otimes b_1b_3+a_1a_3\otimes [b_1,b_3])(a_2\otimes b_2)\]
+\[=[a_1,a_3]a_2\otimes (b_1b_3)b_2+(a_1a_3)a_2\otimes [b_1,b_3]b_2\]
+\[-\lambda [[a_1,a_3],a_2]\otimes [b_1b_3,b_2]-\lambda[a_1a_3,a_2]\otimes[[b_1,b_3],b_2]\]
+\[=[a_1,a_3]a_2\otimes (b_1b_3)b_2%1
++(a_1a_3)a_2\otimes [b_1,b_3]b_2%2
+\]
+\[-\lambda [[a_1,a_3],a_2]\otimes b_1[b_3,b_2]%3
+-\lambda [[a_1,a_3],a_2]]\otimes [b_1,b_2]b_3%4
+-\lambda a_1[a_3,a_2]\otimes[[b_1,b_3],b_2]%5
+-\lambda[a_1,a_2]a_3\otimes[[b_1,b_3],b_2]%6
+\]
+and denote the 6 terms in the first sum by $L_i$, $i=1,\ldots,6$ and in the second sum by $M_i$, $i=1,\dots,6$, hence $L=\sum L_i$ and $M=\sum M_i$.
+
+We observe
+\[K_5=\lambda[a_1,[a_2,a_3]]\otimes[b_1,b_2]b_3=L_3\]
+\[K_6=\lambda[[a_1,a_3],a_2]\otimes[b_1,b_2]b_3=M_4\]
+\[K_7=\lambda[a_1,a_2]a_3\otimes[b_1,[b_2,b_3]]=L_5\]
+\[K_8=\lambda[a_1,a_2]a_3\otimes[[b_1,b_3],b_2]]=M_6\]
+\[K_1-L_1-M_5=a_1[a_2,a_3]\otimes((b_1b_2)b_3-b_1(b_2b_3)-\lambda[[b_1,b_3],b_2])=a_1[a_2,a_3]\otimes([b_1,b_2,b_3]-\lambda[[b_1,b_2,b_3]])\]
+\[K_2-M_1-L_6=[a_1,a_3]a_2\otimes((b_1b_2)b_3-(b_1b_3)b_2+\lambda[b_1[b_2,b_3]])=[a_1,a_3]a_2\otimes([b_2,b_1,b_3)-\lambda[[b_2,b_1,b_3]][\]
+\[K_3-L_2-M_3=((a_1a_2)a_3-a_1(a_2a_3)-\lambda [[a_1,a_3],a_2])\otimes b_1[b_2,b_3]=([a_1,a_2,a_3]-\lambda[[a_1,a_2,a_3]])\otimes b_1[b_2,b_3]\]
+\[K_4-M_2-L_4=(a_1a_2)a_3-(a_1a_3)a_2+\lambda [a_1,[a_2,a_3]])\otimes b_2[b_1,b_3]=([a_2,a_1,a_3]-\lambda[[a_2,a_1,a_3]])\otimes b_2[b_1,b_3]\]
+Again we see that the derivation property is satisfied provided the associators fulfil \eqref{associator}.
+%%%%%%%%%%%%%
+\section{Jacobi2}
+We now assume that the symmetric product in $A$ satisfies the identity
+\be (a^2b)a=a^2(ba),
+\ee
+i.e. the associator $[a^2,b,a]$ vanishes. Then $A$, equipped with the symmetric product, is a Jordan algebra.
+We consider isomorphisms $\alpha:A\to C$, $\beta :B\to C$ where $B,C$ are again algebras with 2  products as before. We consider $A$ and $B$ as independent and express this by the conditions
+\be
+[\alpha(a),\beta(b),\beta(b')]=0=[\beta(b),\alpha(a),\alpha(a')]
+\ee
+and
+\be[\alpha(a),\beta(b)]=0\ee
+We can now compute the antisymmetric products of elements of the form $\alpha(a)\beta(b)$:
+\be
+[\alpha(a)\beta(b),\alpha(a')\beta(b')]=\alpha(a)[\beta(b),\alpha(a')\beta(b')]+[\alpha(a),\alpha(a')\beta(b')]\beta(b)
+\ee
+\[=\alpha(a)(\alpha(a')[\beta(b)),\beta(b')]+([\alpha(a),\alpha(a')]\beta(b))\beta(b')]\]
+\[=\alpha(aa')\beta([b,b'])+\alpha([a,a'])\beta(bb')\]
+In the following we identify the elements of $A$ and $B$ with their images in $C$.
+By assumption, the antisymmetric product in $C$ satisfies the Jacobi identity. We use this identity for elements of the form 
+We compute the second antisymmetric product
+\[[[a_1b_1,a_2b_2],a_3b_3]=[[a_1,a_2]b_1b_2+a_1a_2[b_1,b_2],a_3b_3]\]
+\be\label{Jac1}=[[a_1,a_2],a_3](b_1b_2)b_3+(a_1a_2)a_3[[b_1,b_2],b_3]+[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\ee
+In the last 2 terms we apply the derivation property \eqref{der2} and obtain 4 terms,
+\[[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\]\[=[a_1,a_2]a_3b_1[b_2,b_3]+[a_1,a_2]a_3[b_1,b_2]b_3+a_1[a_2,a_3][b_1,b_2]b_3+[a_1,a_3]a_2[b_1,b_2]b_3\ .\]
+If we perform a cyclic sum over the indices we see that the 1st and the 4th term cancel, and also the 2nd and 3rd term. For the Jacobi identity only the first 2 terms in \eqref{Jac1}
+contribute. We use the Jacobi identities in $A$ and $B$,
+\[[[a_1,a_2],a_3]=-[[a_2,a_3],a_1]-[[a_3,a_1],a_2]\ ,\  [[b_1,b_2],b_3]=- [[b_2,b_3],b_1]- [[b_3,b_1],b_2]\]
+The Jacobi identity in $C$ then amounts to the relation
+\[0=[[a_2,a_3],a_1]((b_2b_3)b_1-(b_1b_2)b_3)+[[a_3,a_1],a_2](b_3b_1)b_2-(b_1b_2)b_3)+(a\leftrightarrow b))\]
+\[\equiv [[a_2,a_1,a_3]][b_3,b_2,b_1]+[[a_3,a_2,a_1]][b_3,b_1,b_2]+(a\leftrightarrow b))\]
+We now choose $a_3=a_1^2$. Then both associators $[[a_3,a_2,a_1]]$ and $[a_3,a_2,a_1]$ vanish and we obtain the relation
+\be[[a_2,a_1,a_1^2]][b_3,b_2,b_1]+[a_2,a_1,a_1^2][[b_3,b_2,b_1]=0\ .\ee
+We assume that the linear space generated by products of the form $ab$, $a\in,b\in B$ is isomorphic to the tensor product $A\otimes  B$ of the two vector spaces. Then
+if $[[a_2,a_1,a_2^2]]\not=0$ for some $a_1,a_2\in A$ we have the relation
+\be[b_3,b_2,b_1]=\lambda[[b_3,b_2,b_1]]\label{ass2}\ee
+for some $\lambda \in \RR$.
+\section{Jordan Product}
+We now show that $\eqref{ass2}$ determines the symmetric product in $C$. By assumption we have
+\[(ab)b'=a(bb')\text{ and }a(a'b)=(aa')b\]
+We now compute $(ab)(a'b')$. We have
+\[(ab)(a'b')=((ab)a')b'-[ab,a',b]\]
+It holds 
+\[((ab)a')b'=(a'(ab))b'=((aa')b)b'=(aa')(bb')\]
+and due to the relation between the associators
+\[[ab,a',b'[=\lambda[[ab,b'],a']=\lambda [a[b,b'],a']=\lambda[a,a'][b,b']\]
+We therefore arrive at the formula for the symmetric product
+\[(ab)(a'b')=(aa')(bb')-\lambda[a,a'][b,b']\]
+ 
+
+%\renewcommbnd{\a}{\alpha(a)}
+%\newcommand{\ba}{\beta(b_1)}
+%\newcommand{\bb}{\beta(b_2)}\newcommand{\bc}{\beta(b_3)}
+%\newcommand{\aq}{\alpha(a^2)}
+%\newcommand{\ap}{\alpha(a')}
+%$\a$,$\ba$,$\bb$,$\bc$,$\aq$,$\ap$
+%$a^2b_1,a'b_2,ab_3$, $a,a'\in A$, $b_1,b_2,b_3\in B$.
+%we obtain
+%\be
+%0=[[a^2b_1,a'b_2],ab_3]+[[a'b_2,ab_3],a^2b_1]+[[ab_3,a^2b_1],a'b_2]
+%\ee
+%\[=[[a^2,a']b_1b_2+a^2a'[b_1,b_2],ab_3]+[[a',a]b_2b_3+a'a[b_2,b_3],a^2b_1]+[a^3[b_3,b_1],a'b_2]\]
+%\[=[[a^2,a'],a](b_1b_2)b_3+[[a',a],a^2](b_2b_3)b_1+(a^2a')a[[b_1,b_2],b_3]+a^3a'[[b_3,b_1],b_2]\]
+%\[+[a^2,a']a[b_1b_2]b_3+[a^2a',a][b_1,b_2]b_3+[a',a]a^2[b_2b_3,b_1]+[a'a,a^2][b_2,b_3]b_1+[a^3,a'][b_3,b_1]b_2\]
+
+
+
+\end{document}  
