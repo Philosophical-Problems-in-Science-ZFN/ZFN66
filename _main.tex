@@ -680,28 +680,28 @@ backend=biber]{biblatex}
 \usepackage{csquotes}
 
 
-\addbibresource{ART_Kiefer/Kiefer.bib}
-\addbibresource{ART_Sierotowicz/Sierotowicz.bib}
-\addbibresource{ART_Liana/Liana.bib}
-
-\addbibresource{PAU_Lamza/Lamza.bib}
-
-\addbibresource{CLA_Heller/Heller.bib}
-\addbibresource{CLA_Polak/Polak-ext.bib}
-\addbibresource{CLA_Trombik/Trombik.bib}
-
-
-\addbibresource{SPE_Fredenhagen/Fredenhagen.bib}
-\addbibresource{SPE_Arodz/Arodz.bib}
-\addbibresource{SPE_Krol/Krol.bib}
-%\addbibresource{SPE_Lizzi/Lizzi.bib}
-\addbibresource{SPE_Dembinski/Dembinski.bib}
-
-
-\addbibresource{REC_Polak1/Polak.bib}
-\addbibresource{REC_Polak2/Polak.bib}
-\addbibresource{REC_Rodzen/Rodzen.bib}
-\addbibresource{REC_Trombik/Trombik.bib}
+%\addbibresource{ART_Kiefer/Kiefer.bib}
+%\addbibresource{ART_Sierotowicz/Sierotowicz.bib}
+%\addbibresource{ART_Liana/Liana.bib}
+%
+%\addbibresource{PAU_Lamza/Lamza.bib}
+%
+%\addbibresource{CLA_Heller/Heller.bib}
+%\addbibresource{CLA_Polak/Polak-ext.bib}
+%\addbibresource{CLA_Trombik/Trombik.bib}
+%
+%
+%\addbibresource{SPE_Fredenhagen/Fredenhagen.bib}
+%\addbibresource{SPE_Arodz/Arodz.bib}
+%\addbibresource{SPE_Krol/Krol.bib}
+\addbibresource{SPE_Lizzi/Lizzi.bib}
+%\addbibresource{SPE_Dembinski/Dembinski.bib}
+%
+%
+%\addbibresource{REC_Polak1/Polak.bib}
+%\addbibresource{REC_Polak2/Polak.bib}
+%\addbibresource{REC_Rodzen/Rodzen.bib}
+%\addbibresource{REC_Trombik/Trombik.bib}
 
 
 
@@ -842,6 +842,10 @@ backend=biber]{biblatex}
 \usepackage{lipsum}
 
 
+
+
+
+
 %---------------Kiefer-----------------------
 
 \newcommand{\be}{\begin{equation}}
@@ -878,6 +882,19 @@ backend=biber]{biblatex}
 \newtheorem{Corollary}{Corollary}
 
 
+%---------------Lizzi-----------------------
+
+
+\newcommand{\del}{\partial}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\formula}[1]{\be #1 \ee}
+%formu per le formule nel testo
+\newcommand{\formu}[1]{$  #1$}
+\newcommand{\Tr}[1]{\:{\rm Tr}\,#1}
+\newcommand{\tr}[1]{\:{\rm tr}\,#1}
+\usepackage{slashed} %sprawdzić, czy nie chrzani czegoś w innych tekstach
+\usepackage{braket} %sprawdzić, czy nie chrzani czegoś w innych tekstach
+
 %--------------------------------------------
 
 \begin{document}
@@ -891,11 +908,11 @@ backend=biber]{biblatex}
 %\includepdf[pages=1]{images/CT4.pdf}
 
 
-\input{pierwsza.tex}
-\clearpage
-
-\input{czwarta_eng.tex}
-\clearpage
+%\input{pierwsza.tex}
+%\clearpage
+%
+%\input{czwarta_eng.tex}
+%\clearpage
 
 %\input{toctest.tex}
 %
@@ -903,12 +920,12 @@ backend=biber]{biblatex}
 
 %Spis tresci -------------------------------------------------
 
-{\thispagestyle{plain} \tableofcontents \clearpage}
+%{\thispagestyle{plain} \tableofcontents \clearpage}
 %--------------------------------------------------------------------------------------------
-\newpage
-\thispagestyle{plain}
-\cleardoublepage
-\thispagestyle{plain}
+%\newpage
+%\thispagestyle{plain}
+%\cleardoublepage
+%\thispagestyle{plain}
 
 %--------------------------------------
 
@@ -923,66 +940,66 @@ backend=biber]{biblatex}
 
 
 
-\sekcja{Od Redakcji}{Editorial}
-
-\input{EDI_Heller/40latZFN.tex}
-
-
-
-\sekcja{Emergence of the Classical}{}
-
-\input{SPE_Krol/Krol.tex}
-
-%\input{SPE_Lizzi/Lizzi.tex}
-
-\input{SPE_Fredenhagen/Fredenhagen.tex}
-
-\input{SPE_Arodz/Arodz.tex}
-
-\input{SPE_Dembinski/Dembinski.tex}
-
-
-
-
-\sekcja{Artykuły}{Articles}
-
-\input{ART_Kiefer/Kiefer.tex}
-
-\input{ART_Sierotowicz/Sierotowicz.tex}
-
-\input{ART_Liana/Liana.tex}
-
-
-
-
-\sekcja{Z prac Komisji Filozofii Nauk PAU}{Proceedings of the PAU Commission\\\ on the Philosophy of Science}
-
-\input{PAU_Lamza/Lamza.tex}
-
-
-
-\sekcja{Klasycy: teksty-komentarze}{Classics: texts and commentaries}
-%\sekcja{Z lektury klasyków}{Learning from the classics}
-
-\input{CLA_Heller/Heller.tex}
-
-\input{CLA_Polak/Polak.tex}
-
-\input{CLA_Trombik/Trombik.tex}
-
-
-
-\sekcja{Recenzje}{Book reviews}
-
-\input{REC_Polak1/Polak.tex}
-
-\input{REC_Polak2/Polak.tex}
-
-\input{REC_Rodzen/Rodzen.tex}
-
-\input{REC_Trombik/Trombik.tex}
-
-\input{REC_Petreshak/Petreshak.tex}
+%\sekcja{Od Redakcji}{Editorial}
+%
+%\input{EDI_Heller/40latZFN.tex}
+%
+%
+%
+%\sekcja{Emergence of the Classical}{}
+%
+%\input{SPE_Krol/Krol.tex}
+%
+\input{SPE_Lizzi/Lizzi.tex}
+%
+%\input{SPE_Fredenhagen/Fredenhagen.tex}
+%
+%\input{SPE_Arodz/Arodz.tex}
+%
+%\input{SPE_Dembinski/Dembinski.tex}
+%
+%
+%
+%
+%\sekcja{Artykuły}{Articles}
+%
+%\input{ART_Kiefer/Kiefer.tex}
+%
+%\input{ART_Sierotowicz/Sierotowicz.tex}
+%
+%\input{ART_Liana/Liana.tex}
+%
+%
+%
+%
+%\sekcja{Z prac Komisji Filozofii Nauk PAU}{Proceedings of the PAU Commission\\\ on the Philosophy of Science}
+%
+%\input{PAU_Lamza/Lamza.tex}
+%
+%
+%
+%\sekcja{Klasycy: teksty-komentarze}{Classics: texts and commentaries}
+%%\sekcja{Z lektury klasyków}{Learning from the classics}
+%
+%\input{CLA_Heller/Heller.tex}
+%
+%\input{CLA_Polak/Polak.tex}
+%
+%\input{CLA_Trombik/Trombik.tex}
+%
+%
+%
+%\sekcja{Recenzje}{Book reviews}
+%
+%\input{REC_Polak1/Polak.tex}
+%
+%\input{REC_Polak2/Polak.tex}
+%
+%\input{REC_Rodzen/Rodzen.tex}
+%
+%\input{REC_Trombik/Trombik.tex}
+%
+%\input{REC_Petreshak/Petreshak.tex}
 
 
 
