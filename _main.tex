@@ -364,7 +364,7 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 }
 
 %stworzne na potrzeby dwóch autorów, trzrba przemyśleć
-\newenvironment{krolak}[8]%
+\newenvironment{artengenv2auth}[8]%
 {	\setcounter{footnote}{0}%
 	\setcounter{equation}{0}%
 	\setcounter{section}{0}%
@@ -398,6 +398,8 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 		\label{e\tocnr}%
 	\end{refsection}%
 }
+
+
 
 \newenvironment{editorial}[5]%
 {	\setcounter{footnote}{0}%
@@ -678,22 +680,22 @@ backend=biber]{biblatex}
 \usepackage{csquotes}
 
 
-%\addbibresource{ART_Kiefer/Kiefer.bib}
-%\addbibresource{ART_Sierotowicz/Sierotowicz.bib}
-%\addbibresource{ART_Liana/Liana.bib}
+\addbibresource{ART_Kiefer/Kiefer.bib}
+\addbibresource{ART_Sierotowicz/Sierotowicz.bib}
+\addbibresource{ART_Liana/Liana.bib}
 
-%\addbibresource{PAU_Lamza/Lamza.bib}
+\addbibresource{PAU_Lamza/Lamza.bib}
 
-%\addbibresource{CLA_Heller/Heller.bib}
-%\addbibresource{CLA_Polak/Polak-ext.bib}
-%\addbibresource{CLA_Trombik/Trombik.bib}
+\addbibresource{CLA_Heller/Heller.bib}
+\addbibresource{CLA_Polak/Polak-ext.bib}
+\addbibresource{CLA_Trombik/Trombik.bib}
 
 
-%\addbibresource{SPE_Fredenhagen/Fredenhagen.bib}
+\addbibresource{SPE_Fredenhagen/Fredenhagen.bib}
 \addbibresource{SPE_Arodz/Arodz.bib}
-%\addbibresource{SPE_Arodz/Arodz.bib}
-%\addbibresource{SPE_Arodz/Arodz.bib}
-%\addbibresource{SPE_Arodz/Arodz.bib}
+\addbibresource{SPE_Krol/Krol.bib}
+%\addbibresource{SPE_Lizzi/Lizzi.bib}
+\addbibresource{SPE_Dembinski/Dembinski.bib}
 
 
 %\addbibresource{_REC_Heller/heller-maczka.bib}
@@ -856,13 +858,22 @@ backend=biber]{biblatex}
 
 
 
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}{Lemma}[theorem]
-\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem-fred}{Theorem}[section]
+\newtheorem{lemma-fred}{Lemma}[theorem-fred]
+\newtheorem{definition-fred}{Definition}[section]
 
 
 \newcommand{\RR}{\mathbb{R}}           % real  numbers
 \newcommand{\CC}{\mathbb{C}}
+
+
+%---------------Krol-----------------------
+
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Definition}{Definition}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Corollary}{Corollary}
+
 
 %--------------------------------------------
 
@@ -877,11 +888,11 @@ backend=biber]{biblatex}
 %\includepdf[pages=1]{images/CT4.pdf}
 
 
-%\input{pierwsza.tex}
-%\clearpage
-%
-%\input{czwarta_eng.tex}
-%\clearpage
+\input{pierwsza.tex}
+\clearpage
+
+\input{czwarta_eng.tex}
+\clearpage
 
 %\input{toctest.tex}
 %
@@ -889,12 +900,12 @@ backend=biber]{biblatex}
 
 %Spis tresci -------------------------------------------------
 
-%{\thispagestyle{plain} \tableofcontents \clearpage}
+{\thispagestyle{plain} \tableofcontents \clearpage}
 %--------------------------------------------------------------------------------------------
-%\newpage
-%\thispagestyle{plain}
-%\cleardoublepage
-%\thispagestyle{plain}
+\newpage
+\thispagestyle{plain}
+\cleardoublepage
+\thispagestyle{plain}
 
 %--------------------------------------
 
@@ -906,51 +917,58 @@ backend=biber]{biblatex}
 %\input{default.tex}
 
 
-%\sekcja{Od Redakcji}{Editorial}
+\sekcja{Od Redakcji}{Editorial}
 
-%\input{EDI_Heller/40latZFN.tex}
+\input{EDI_Heller/40latZFN.tex}
 
 
 
-%\sekcja{Emergence of the Classical}{}
+\sekcja{Emergence of the Classical}{}
 
-%\input{SPE_Fredenhagen/Fredenhagen.tex}
+\input{SPE_Fredenhagen/Fredenhagen.tex}
 
 \input{SPE_Arodz/Arodz.tex}
 
+\input{SPE_Krol/Krol.tex}
 
+%\input{SPE_Lizzi/Lizzi.tex}
 
-%\sekcja{Artykuły}{Articles}
-
-%\input{ART_Kiefer/Kiefer.tex}
-
-%\input{ART_Sierotowicz/Sierotowicz.tex}
-
-%\input{ART_Liana/Liana.tex}
+\input{SPE_Dembinski/Dembinski.tex}
 
 
 
 
+\sekcja{Artykuły}{Articles}
+
+\input{ART_Kiefer/Kiefer.tex}
+
+\input{ART_Sierotowicz/Sierotowicz.tex}
+
+\input{ART_Liana/Liana.tex}
 
 
 
 
+\sekcja{Z prac Komisji Filozofii Nauk PAU}{Proceedings of the PAU Commission\\\ on the Philosophy of Science}
+
+\input{PAU_Lamza/Lamza.tex}
 
 
-%\sekcja{Z prac Komisji Filozofii Nauk PAU}{Proceedings of the PAU Commission\\\ on the Philosophy of Science}
 
-%\input{PAU_Lamza/Lamza.tex}
-
-%\sekcja{Klasycy: teksty-komentarze}{Classics: texts and commentaries}
+\sekcja{Klasycy: teksty-komentarze}{Classics: texts and commentaries}
 %\sekcja{Z lektury klasyków}{Learning from the classics}
-%\input{CLA_Heller/Heller.tex}
-%\input{CLA_Polak/Polak.tex}
-%\input{CLA_Trombik/Trombik.tex}
+
+\input{CLA_Heller/Heller.tex}
+
+\input{CLA_Polak/Polak.tex}
+
+\input{CLA_Trombik/Trombik.tex}
 
 
-%\sekcja{Recenzje}{Book reviews}
 
-%\input{REC_Petreshak/Petreshak.tex}
+\sekcja{Recenzje}{Book reviews}
+
+\input{REC_Petreshak/Petreshak.tex}
 
 
 
