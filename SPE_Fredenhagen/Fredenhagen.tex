@@ -114,22 +114,32 @@ In particular, $C_0$ is closed under the antisymmetric product.
 \end{lemma-fred}
 \begin{proof}
 By \eqref{Leibniz}, \eqref{loc1} and \eqref{loc2} we have
-\[[ab,a'b']=a[b,a'b']+[a,a'b']b=a(a'[b,b'])+([a,a']b')b=[a,a'](b'b)+(aa')[b,b']\ .\]
+\begin{equation*}
+\begin{split}
+[ab,a'b']=a[b,a'b']+[a,a'b']b=a(a'[b,b'])+([a,a']b')b\\
+=[a,a'](b'b)+(aa')[b,b']\ .
+\end{split}
+\end{equation*}
 \end{proof}
 In the next step we analyze the consequences of the Jacobi identity within $C_0$.
 %By assumption, the antisymmetric product in $C_0$ satisfies the Jacobi identity.
 We compute the second antisymmetric product, with $a_i\in A,b_i\in B,i=1,2,3$, 
 \[[[a_1b_1,a_2b_2],a_3b_3]=[[a_1,a_2]b_1b_2+a_1a_2[b_1,b_2],a_3b_3]\]
-\be\label{Jac1}=[[a_1,a_2],a_3](b_1b_2)b_3+(a_1a_2)a_3[[b_1,b_2],b_3]+[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\ .\ee
+\[=[[a_1,a_2],a_3](b_1b_2)b_3+(a_1a_2)a_3[[b_1,b_2],b_3]\]
+\be\label{Jac1}+[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\ .\ee
 In the last 2 terms we apply the derivation property \eqref{Leibniz} and obtain 4 terms,
-\[[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\]\[=[a_1,a_2]a_3b_1[b_2,b_3]+[a_1,a_2]a_3[b_1,b_2]b_3+a_1[a_2,a_3][b_1,b_2]b_3+[a_1,a_3]a_2[b_1,b_2]b_3\ .\]
+\[[a_1,a_2]a_3[b_1b_2,b_3]+[a_1a_2,a_3][b_1,b_2]b_3\]
+\[=[a_1,a_2]a_3b_1[b_2,b_3]+[a_1,a_2]a_3[b_1,b_2]b_3\]
+\[+a_1[a_2,a_3][b_1,b_2]b_3+[a_1,a_3]a_2[b_1,b_2]b_3\ .\]
 If we perform a cyclic sum over the indices we see that the 1\textsuperscript{st} and the 4\textsuperscript{th} term cancel, and also the 2\textsuperscript{nd} and 3\textsuperscript{rd} term. 
 
 Thus for the Jacobi identity only the first 2 terms in \eqref{Jac1}
 contribute. We use the Jacobi identities in $A$ and $B$,
-\[[[a_1,a_2],a_3]=-[[a_2,a_3],a_1]-[[a_3,a_1],a_2]\ ,\  [[b_1,b_2],b_3]=- [[b_2,b_3],b_1]- [[b_3,b_1],b_2]\ .\]
+\[[[a_1,a_2],a_3]=-[[a_2,a_3],a_1]-[[a_3,a_1],a_2]\ ,\]
+\[[[b_1,b_2],b_3]=- [[b_2,b_3],b_1]- [[b_3,b_1],b_2]\ .\]
 The Jacobi identity in $C$ then amounts to the relation
-\[0=[[a_2,a_3],a_1]((b_2b_3)b_1-(b_1b_2)b_3)+[[a_3,a_1],a_2](b_3b_1)b_2-(b_1b_2)b_3)+(a\leftrightarrow b))\]
+\[0=[[a_2,a_3],a_1]((b_2b_3)b_1-(b_1b_2)b_3)\]
+\[+[[a_3,a_1],a_2](b_3b_1)b_2-(b_1b_2)b_3)+(a\leftrightarrow b))\]
 \[\equiv [[a_2,a_1,a_3]][b_3,b_2,b_1]+[[a_3,a_2,a_1]][b_3,b_1,b_2]+(a\leftrightarrow b)).\]
 To simplify this expression we choose $a_3=a_1$. Then both associators $[[a_3,a_2,a_1]]$ and $[a_3,a_2,a_1]$ vanish, and we obtain the relation
 \be\label{Jac2}[[a_2,a_1,a_1]][b_3,b_2,b_1]+[a_2,a_1,a_1][[b_3,b_2,b_1]]=0\ .\ee

@@ -32,6 +32,8 @@
 %\usepackage{xfrac}
 \usepackage[normalem]{ulem}
 
+%\usepackasge{extdash} %hyphens
+
 
 
 \usepackage{longtable}
@@ -714,6 +716,7 @@ backend=biber]{biblatex}
 
 %Zmienia Wyed. na red.
 \usepackage{xpatch}
+\NewBibliographyString{series}
 \DefineBibliographyStrings{polish}{%
 %	byeditor = {red\adddot},%
 %	in = {[w\addcolon]},%
@@ -724,16 +727,18 @@ backend=biber]{biblatex}
 	pages = {ss\adddot~},%
 %	part = {część},%
 	andothers = {i~in\adddot\addcomma},%
+	series = {seria\addcolon\space}
 }
 
 \DefineBibliographyStrings{english}{%
 	urlfrom = {Available at:},% w oryginale Available from: moim zdaniem ok
+	series = {}
 }
 
 %\DeclareFieldFormat[article]{volume}{{#1}}
 %\DeclareFieldFormat{url}{<#1>}
 \DeclareFieldFormat{url}{\bibsentence\bibstring{urlfrom}\addcolon\space<\url{#1}>} %dodaje nawiasy trójkątne do url
-\DeclareFieldFormat[book,inbook,incollection,collection]{series}{\mkbibemph{#1}}
+\DeclareFieldFormat[book,inbook,incollection,collection]{series}{\bibstring{series}\mkbibemph{#1}}
 \iflanguage{polish}{\renewcommand*{\finalnamedelim}{\addspace\bibstring{and}~}} %dodaje twardą spację do Autor i~Autor
 \renewcommand\bibnamedelimc{\addnbspace}
 \renewcommand\bibnamedelimd{\addnbspace}
