@@ -757,7 +757,12 @@ backend=biber]{biblatex}
 
 
 
-\AtEveryBibitem{\clearfield{titleaddon}\clearfield{month}\clearfield{note}\clearlist{language}}
+\AtEveryBibitem{%
+	\clearfield{titleaddon}%
+	\clearfield{month}%
+%	\clearfield{note}%
+	\clearlist{language}%
+}
 \AtEveryCitekey{\clearfield{month}}
 
 
