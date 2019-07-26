@@ -766,6 +766,23 @@ backend=biber]{biblatex}
 \AtEveryCitekey{\clearfield{month}}
 
 
+%-----normalna czcionka przy arXiv------
+\makeatletter
+\DeclareFieldFormat{eprint:arxiv}{%
+	arXiv\addcolon\space
+	\ifhyperref
+	{\href{https://arxiv.org/\abx@arxivpath/#1}{%
+			\nolinkurl{#1}%
+			\iffieldundef{eprintclass}
+			{}
+			{\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
+	{\nolinkurl{#1}%
+		\iffieldundef{eprintclass}
+		{}
+		{\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
+\makeatother
+
+
 
 
 %\setcounter{biburlnumpenalty}{9000}
