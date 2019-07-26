@@ -125,8 +125,9 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 \usepackage{scrextend}
 
 %%%liana
+\usepackage{mdframed} %sprawdzić, czy gdzieś nie szkodzi
 \newtheoremstyle{sltheorem}
-{1em}                % Space above
+{0pt}                % Space above
 {1em}                % Space below
 {\small\mdseries}        % Theorem body font % (default is "\upshape")
 {}                % Indent amount
@@ -136,6 +137,14 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 {}                % Theorem head spec
 \theoremstyle{sltheorem}
 \newtheorem{uwaga}{Uwaga}
+\surroundwithmdframed[linewidth=1pt,
+linecolor=black,
+bottomline=false,topline=false,rightline=false,
+innerrightmargin=0pt,innertopmargin=0pt,innerbottommargin=0pt,
+%outerrightmargin=0pt,outertopmargin=0pt,outerbottommargin=0pt,
+innerleftmargin=.5em,% Distance between vertical rule & proof content
+skipabove=1em,splittopskip=0pt,splitbottomskip=0pt%
+]{uwaga}
 
 
 
@@ -760,13 +769,13 @@ backend=biber]{biblatex}
 \AtEveryBibitem{%
 	\clearfield{titleaddon}%
 	\clearfield{month}%
-%	\clearfield{note}%
+	\clearfield{note}%
 	\clearlist{language}%
 }
 \AtEveryCitekey{\clearfield{month}}
 
 
-%-----normalna czcionka przy arXiv------
+%normalna czcionka przy arXiv
 \makeatletter
 \DeclareFieldFormat{eprint:arxiv}{%
 	arXiv\addcolon\space
@@ -782,6 +791,9 @@ backend=biber]{biblatex}
 		{\addspace\mkbibbrackets{\thefield{eprintclass}}}}}
 \makeatother
 
+
+%linkowanie do bib entry
+\newcommand{\citelink}[2]{\hyperlink{cite.\therefsection @#1}{#2}}
 
 
 
