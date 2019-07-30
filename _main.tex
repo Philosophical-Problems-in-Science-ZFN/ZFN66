@@ -287,17 +287,37 @@ skipabove=1em,splittopskip=0pt,splitbottomskip=0pt%
 
 \newcounter{tocnr}\setcounter{tocnr}{0}
 
+%\newcommand{\pasekpl}{%
+%\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\infbiblio\pageref{\tocnr}\textendash\pageref{e\tocnr}\end{subsubsectit}\par%
+%	\vspace{.4mm}%
+%	\noindent\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{images/CC-BY-NC-ND}}%
+%	\begin{subsubsectit}\begin{small}\enspace CC-BY-NC-ND 4.0\end{small}\end{subsubsectit}}%
+%}
+%\newcommand{\pasekeng}{%
+%	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\infbiblioeng\pageref{\tocnr}\textendash\pageref{e\tocnr}\end{subsubsectit}\par%
+%		\vspace{.2mm}%
+%		\noindent\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{images/CC-BY-NC-ND}}%
+%		\begin{subsubsectit}\begin{small}\enspace CC-BY-NC-ND 4.0\end{small}\end{subsubsectit}}%
+%}
+
+
 \newcommand{\pasekpl}{%
-\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\infbiblio\pageref{\tocnr}\textendash\pageref{e\tocnr}\end{subsubsectit}\par%
-	\vspace{.4mm}%
-	\noindent\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{images/CC-BY-NC-ND}}%
-	\begin{subsubsectit}\begin{small}\enspace CC-BY-NC-ND 4.0\end{small}\end{subsubsectit}}%
+	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\begin{small}%
+				\zfntitle\: (\zfntitleeng)%
+		\par\vspace{.1mm}%
+		nr \numerarabski\ (\rok), %
+		ss.~\pageref{\tocnr}\textendash\pageref{e\tocnr} \enspace $\bullet$ \enspace\end{small}%
+	\begin{footnotesize}CC-BY-NC-ND 4.0\end{footnotesize}\end{subsubsectit}%
+		\enspace\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{images/CC-BY-NC-ND}}}%
 }
 \newcommand{\pasekeng}{%
-	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\infbiblioeng\pageref{\tocnr}\textendash\pageref{e\tocnr}\end{subsubsectit}\par%
-		\vspace{.2mm}%
-		\noindent\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{images/CC-BY-NC-ND}}%
-		\begin{subsubsectit}\begin{small}\enspace CC-BY-NC-ND 4.0\end{small}\end{subsubsectit}}%
+	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\begin{small}%
+				\zfntitleeng\: (\zfntitle)%
+		\par\vspace{.1mm}%
+		No \numerarabski\ (\rok), %
+		pp.~\pageref{\tocnr}\textendash\pageref{e\tocnr} \enspace $\bullet$ \enspace\end{small}%
+		\begin{footnotesize}CC-BY-NC-ND 4.0\end{footnotesize}\end{subsubsectit}%
+		\enspace\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{images/CC-BY-NC-ND}}}%
 }
 
 
@@ -356,7 +376,7 @@ skipabove=1em,splittopskip=0pt,splitbottomskip=0pt%
 	\addtocontents{toc}{{\toctititem#4}\dotfill{\subsubsectit\thepage}}%
 	\addtocontents{toc}{\vskip.8\baselineskip}
 	\begin{refsection}%
-		\selectlanguage{english}
+		\selectlanguage{english}%
 		\pasekeng%
 		\begin{raggedleft}%
 			{\flushright\chaptitle\color{black!70}{#2\par}}%
@@ -393,7 +413,7 @@ skipabove=1em,splittopskip=0pt,splitbottomskip=0pt%
 	\addtocontents{toc}{{\toctititem#4}\dotfill{\subsubsectit\thepage}}%
 	\addtocontents{toc}{\vskip.8\baselineskip}
 	\begin{refsection}%
-		\selectlanguage{english}
+		\selectlanguage{english}%
 		\pasekeng%
 		\begin{raggedleft}%
 			{\flushright\chaptitle\color{black!70}{#2\par}}%
